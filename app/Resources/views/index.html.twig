@@ -1,0 +1,177 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="parallax"></div>
+    <div class="container container-index">
+        <h1 class="border border-top-0 border-left-0 border-right-0">Lorem ipsum</h1>
+        <div class="row">
+            <div class="col-md-4"><img src="{{ asset('images/user.jpg') }}" class="img-fluid"></div>
+            <div class="col-md-8">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula
+                massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est
+                eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae,
+                consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras
+                vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed
+                dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante
+                non diam sodales hendrerit.
+
+                Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar.
+                Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus
+                sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet
+                pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer
+                tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat.
+                Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae
+                magna.
+
+                Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa
+                adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam
+                euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo.
+                Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus
+                faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet"
+            </div>
+        </div>
+    </div>
+    <div class="parallax2"></div>
+    <div class="container container-index">
+        <h1 class="border border-top-0 border-left-0 border-right-0">Plan & horaires du restaurant</h1>
+        <div class="row">
+            <div id="map" class="col-md-8"></div>
+            <div class="table-responsive col-md-4">
+                <table class="table text-center">
+                    <tr>
+                        <th>Jour</th>
+                        <th>Ouverture</th>
+                        <th>Fermeture</th>
+                    </tr>
+                    <tr>
+                        <td>Lundi</td>
+                        <td>7h</td>
+                        <td>20h</td>
+                    </tr>
+                    <tr>
+                        <td>Mardi</td>
+                        <td>7h</td>
+                        <td>20h</td>
+                    </tr>
+                    <tr>
+                        <td>Mercredi</td>
+                        <td>7h</td>
+                        <td>20h</td>
+                    </tr>
+                    <tr>
+                        <td>Jeudi</td>
+                        <td>7h</td>
+                        <td>20h</td>
+                    </tr>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td>7h</td>
+                        <td>20h</td>
+                    </tr>
+                    <tr>
+                        <td>Samedi</td>
+                        <td>7h</td>
+                        <td>20h</td>
+                    </tr>
+                    <tr>
+                        <td>Dimanche</td>
+                        <td>7h</td>
+                        <td>20h</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <h3 class="text-center col-md-12">Comment s'y rendre?</h3>
+            <div class="text-center col-md-12">
+                Proche de Pont-Audemer, votre restaurant Les P'tits Loups vous propose sa restauration tous les midis du
+                lundi au samedi (le soir ou le dimanche sur commande à partir de 20 personnes).
+            </div>
+            <div class="text-center col-md-12">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula
+                massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est
+                eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae,
+                consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras
+                vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed
+                dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante
+                non diam sodales hendrerit. Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel
+                massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis
+                ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id
+                felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum
+                dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et
+                sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis
+                vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula
+                justo vitae magna.
+            </div>
+        </div>
+    </div>
+    <div class="parallax3"></div>
+    <div class="container container-index">
+        <h1 class="border border-top-0 border-left-0 border-right-0">Quelques plats en images</h1>
+        <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="{{ asset('images/slide1.png') }}" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Image 1</h5>
+                            <p>lorem opsum</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('images/slide2.png') }}" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Image 2</h5>
+                            <p>lorem opsum</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('images/slide3.png') }}" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Image 3</h5>
+                            <p>lorem opsum</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        function initMap() {
+            var uluru = {lat: 49.364025, lng: 0.462554};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWdGusRdm9EIBqR9o6ONFbK5O31Ta91j4&callback=initMap">
+    </script>
+    <script>$('.carousel').carousel()</script>
+{% endblock %}
