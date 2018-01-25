@@ -256,3 +256,117 @@ ul {
     margin-top: 50px;
     width: 100%;
 }
+
+.m-carte .m-menu .plat {
+    padding: 0 15px;
+}
+
+.m-plat-info {
+    display: flex;
+    margin: 20px 0 5px 0;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+
+.titre-plat {
+    background-color: #FFF;
+    z-index: 15;
+    padding-right: 5px;
+}
+
+.m-plat-info .m-titre-plat .m-nom-plat {
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #FFF;
+    z-index: 10;
+}
+
+.m-plat-info .m-separateur {
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    background: #DDD;
+}
+
+.m-plat-info .m-prix {
+    display: flex;
+    background-color: #FFF;
+    z-index: 10;
+    padding-left: 5px;
+}
+
+.m-plat-info .m-prix .m-quantite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+}
+.m-plat-info .m-prix .m-quantite span:last-child {
+    font-size: 16px;
+    font-weight: 700;
+    color: #339388;
+}
+
+.m-description-plat {
+    text-align: left;
+    font-size: 12px;
+    color: #9B9B9B;
+    font-style: italic;
+    margin: 0;
+}
+
+.m-title-categorie {
+    padding: 5px 15px 15px 15px;
+    position: relative;
+}
+
+.m-title-categorie:after {
+    content: '';
+    height: 2px;
+    width: 10px;
+    background-color: #979797;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+}
+
+.m-categorie {
+    box-shadow: inset 0 7px 10px -9px rgba(0, 0, 0, 0.4);
+    padding: 15px 0 25px 0;
+}
+a.btt {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    right: 30px;
+    bottom: 30px;
+    background: #ebebeb;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px rgba(23, 25, 25, 0.2);
+}
+
+a.btt .fa {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+a.btt .fa-chevron-up:before {
+    color: black;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+a.btt:hover{
+    transform: translatey(-10%);
+}
