@@ -41,7 +41,7 @@ class Plat
     /**
      * @var Categorie
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Categorie")
-     * @ORM\Column(nullable=false)
+     * @ORM\JoinColumn(nullable=false)
      */
     private $categorie;
 
@@ -50,6 +50,12 @@ class Plat
      * @ORM\Column(type="integer")
      */
     private $position;
+
+    /**
+     * @var double
+     * @ORM\Column(type="float")
+     */
+    private $prix;
 
     /**
      * @return mixed
@@ -146,6 +152,24 @@ class Plat
     public function setPosition($position)
     {
         $this->position = $position;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPrix()
+    {
+        return $this->prix;
+    }
+
+    /**
+     * @param float $prix
+     * @return Plat
+     */
+    public function setPrix($prix)
+    {
+        $this->prix = $prix;
         return $this;
     }
 }
