@@ -1,0 +1,14 @@
+services:
+  admin.categorie:
+        class: AppBundle\Admin\CategorieAdmin
+        arguments: [~, AppBundle\Entity\Categorie, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Categories, group: "categorie" }
+        public: true
+
+  admin.plat:
+        class: AppBundle\Admin\PlatAdmin
+        arguments: [~, AppBundle\Entity\Plat, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Plats, group: "categorie" }
+        public: true
