@@ -3,6 +3,7 @@
 
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 
@@ -38,6 +39,17 @@ class Categorie
      * @ORM\Column(type="integer")
      */
     private $position;
+
+    /**
+     * @var Plat[]
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Plat", mappedBy="categorie")
+     */
+    private $plats;
+
+    public function __construct()
+    {
+        $this->plats = new ArrayCollection();
+    }
 
     /**
      * @return mixed
@@ -98,6 +110,24 @@ class Categorie
     public function setPosition($position)
     {
         $this->position = $position;
+        return $this;
+    }
+
+    /**
+     * @return Plat[]
+     */
+    public function getPlats()
+    {
+        return $this->plats;
+    }
+
+    /**
+     * @param Plat[] $plats
+     * @return Categorie
+     */
+    public function setPlats($plats)
+    {
+        $this->plats = $plats;
         return $this;
     }
 }

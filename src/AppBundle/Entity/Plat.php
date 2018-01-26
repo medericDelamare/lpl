@@ -40,7 +40,7 @@ class Plat
 
     /**
      * @var Categorie
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Categorie")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Categorie", inversedBy="plats")
      * @ORM\JoinColumn(nullable=false)
      */
     private $categorie;

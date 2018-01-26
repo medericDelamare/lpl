@@ -6,97 +6,33 @@
         <h1 class="text-center">Cartes et menus</h1>
         <div class="col-md-6">
             <h2 class="text-center">Cartes</h2>
+            {% for categorie in categories %}
             <div class="m-categorie">
                 <div class="m-title-categorie">
-                    <h3 class="text-center">Les planches</h3>
+                    <h3 class="text-center">{{ categorie.nom }}</h3>
                 </div>
-
-                <div class="m-plat-info">
-                    <div class="m-titre-plat">
-                        <span class="m-nom-plat m-photo-active">Pizza Al Taglio à partager</span>
-                    </div>
-                    <span class="m-separateur"></span>
-                    <div class="m-prix">
-                        <div class="m-quantite">
-                            <span>15,50€</span>
+                {% for plat in categorie.plats %}
+                    <div class="m-plat-info">
+                        <div class="m-titre-plat">
+                            <span class="m-nom-plat m-photo-active">{{ plat.nom }}</span>
+                        </div>
+                        <span class="m-separateur"></span>
+                        <div class="m-prix">
+                            <div class="m-quantite">
+                                <span>{{ plat.prix }}€</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <p class="m-description-plat">Jambon blanc aux herbes, Parmesan, Mozzarella, basilic, tomates cerise confites maison</p>
-
-                <div class="m-plat-info">
-                    <div class="m-titre-plat">
-                        <span class="m-nom-plat m-photo-active">Planche de pizzetta</span>
-                    </div>
-                    <span class="m-separateur"></span>
-                    <div class="m-prix">
-                        <div class="m-quantite">
-                            <span>17,50€</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="m-description-plat">Assortiment de 4 mini pizzas</p>
-
-                <div class="m-plat-info">
-                    <div class="m-titre-plat">
-                        <span class="m-nom-plat m-photo-active">Planche italienne</span>
-                    </div>
-                    <span class="m-separateur"></span>
-                    <div class="m-prix">
-                        <div class="m-quantite">
-                            <span>22,50€</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="m-description-plat">Mortadelle à la pistache, jambon de Parme 18 mois, Bresaola Punta d’Anca, Stracciatella, Pecorino poivré, olives, piments verts</p>
-            </div>
-
-            <div class="m-categorie">
-                <div class="m-title-categorie">
-                    <h3 class="text-center">Salades</h3>
-                </div>
-
-                <div class="m-plat-info">
-                    <div class="m-titre-plat">
-                        <span class="m-nom-plat m-photo-active">Bresaola</span>
-                    </div>
-                    <span class="m-separateur"></span>
-                    <div class="m-prix">
-                        <div class="m-quantite">
-                            <span>15,50€</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="m-description-plat">Mozzarella di Bufala croustillante, Bresaola Punta d’Anca, Parmesan 22 mois, tomates cerises confites maison, roquette, pesto</p>
-
-                <div class="m-plat-info">
-                    <div class="m-titre-plat">
-                        <span class="m-nom-plat m-photo-active">Gremolata</span>
-                    </div>
-                    <span class="m-separateur"></span>
-                    <div class="m-prix">
-                        <div class="m-quantite">
-                            <span>18,50€</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="m-description-plat">Poulet mariné aux agrumes, artichaut, fenouil, roquette, tomates cerise confites maison, câpres, Ricotta di Bufala au citron vert</p>
-
-                <div class="m-plat-info">
-                    <div class="m-titre-plat">
-                        <span class="m-nom-plat m-photo-active">Focaccia - Saumon</span>
-                    </div>
-                    <span class="m-separateur"></span>
-                    <div class="m-prix">
-                        <div class="m-quantite">
-                            <span>22,50€</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="m-description-plat">Saumon mariné aux agrumes, Mozzarella di Bufala, avocat, radis, tomate, roquette</p>
+                    <p class="m-description-plat">{{ plat.description }}</p>
+                {% endfor %}
+                {% endfor %}
             </div>
         </div>
-        <a href="#" class="btt"><i class="fa fa-chevron-up"></i></a>
+        <div class="col-md-6">
+            <h2 class="text-center">Menus</h2>
+        </div>
+    </div>
+    <a href="#" class="btt"><i class="fa fa-chevron-up"></i></a>
     </div>
 
 {% endblock %}
@@ -104,8 +40,8 @@
 {% block javascripts %}
     <script>
         var scrolled = 400;
-        $(window).scroll(function() {
-            if ( $(window).scrollTop() > scrolled ) {
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > scrolled) {
                 $('a.btt').fadeIn('slow');
             } else {
                 $('a.btt').fadeOut('slow');
@@ -114,8 +50,8 @@
     </script>
 
     <script>
-        $('a.btt').click(function() {
-            $('html, body').animate({ scrollTop: 0 }, 700);
+        $('a.btt').click(function () {
+            $('html, body').animate({scrollTop: 0}, 700);
             return false;
         });
     </script>
