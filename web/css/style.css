@@ -370,3 +370,9 @@ a.btt .fa-chevron-up:before {
 a.btt:hover{
     transform: translatey(-10%);
 }
+
+.navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+    width: 600px;
+}
