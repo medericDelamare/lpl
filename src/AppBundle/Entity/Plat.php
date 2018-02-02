@@ -196,4 +196,9 @@ class Plat
         $this->choix = $choix;
         return $this;
     }
+
+    public function __toString()
+    {
+        return $this->getNom() . ' (' . $this->getCategorie()->getNom() . ')';
+    }
 }

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75a31430-3182-4a88-b8f8-b3eb542bdb80" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Choix.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Menu.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/menu.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/menu.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Admin/ChoixAdmin.php" afterPath="$PROJECT_DIR$/src/AppBundle/Admin/ChoixAdmin.php" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Admin/MenuAdmin.php" afterPath="$PROJECT_DIR$/src/AppBundle/Admin/MenuAdmin.php" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Choix.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Choix.php" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Plat.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Plat.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,25 +19,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Choix.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Choix.php">
+      <file leaf-file-name="ChoixAdmin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/ChoixAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="36" column="75" lean-forward="false" selection-start-line="36" selection-start-column="75" selection-end-line="36" selection-end-column="75" />
+            <state relative-caret-position="657">
+              <caret line="56" column="24" lean-forward="false" selection-start-line="53" selection-start-column="12" selection-end-line="59" selection-end-column="14" />
               <folding>
-                <element signature="e#36#84#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Menu.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Menu.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="42" column="75" lean-forward="false" selection-start-line="42" selection-start-column="75" selection-end-line="42" selection-end-column="75" />
-              <folding>
-                <element signature="e#36#84#0#PHP" expanded="true" />
+                <element signature="e#35#61#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,18 +34,50 @@
       <file leaf-file-name="Plat.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Plat.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2867">
-              <caret line="197" column="5" lean-forward="false" selection-start-line="197" selection-start-column="5" selection-end-line="197" selection-end-column="5" />
+            <state relative-caret-position="827">
+              <caret line="201" column="78" lean-forward="false" selection-start-line="201" selection-start-column="78" selection-end-line="201" selection-end-column="78" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Categorie.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Categorie.php">
+      <file leaf-file-name="CategorieAdmin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/CategorieAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2057">
-              <caret line="131" column="5" lean-forward="false" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
+            <state relative-caret-position="170">
+              <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuAdmin.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/MenuAdmin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="691">
+              <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding>
+                <element signature="e#35#62#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlatAdmin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/PlatAdmin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Choix.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Choix.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="827">
+              <caret line="133" column="31" lean-forward="false" selection-start-line="133" selection-start-column="31" selection-end-line="133" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -78,6 +97,7 @@
       <find>sect</find>
       <find>content-s</find>
       <find>csrf</find>
+      <find>vers</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -100,7 +120,6 @@
         <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Admin/CategorieAdmin.php" />
-        <option value="$PROJECT_DIR$/app/config/services_sonata.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Admin/PlatAdmin.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Categorie.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/MenuController.php" />
@@ -112,14 +131,17 @@
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/navbar.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/sonata.yml" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/contact.html.twig" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/menu.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Menu.php" />
+        <option value="$PROJECT_DIR$/app/config/sonata.yml" />
+        <option value="$PROJECT_DIR$/app/config/services_sonata.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Admin/ChoixAdmin.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Plat.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Choix.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Menu.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Admin/MenuAdmin.php" />
       </list>
     </option>
   </component>
@@ -192,8 +214,8 @@
       <path value="$PROJECT_DIR$/vendor/sonata-project/core-bundle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="386" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -224,6 +246,23 @@
             <path>
               <item name="LesPtitsLoups" type="b2602c69:ProjectViewProjectNode" />
               <item name="LesPtitsLoups" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="LesPtitsLoups" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LesPtitsLoups" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="LesPtitsLoups" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LesPtitsLoups" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="LesPtitsLoups" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LesPtitsLoups" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -237,7 +276,25 @@
               <item name="LesPtitsLoups" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="LesPtitsLoups" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LesPtitsLoups" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="LesPtitsLoups" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LesPtitsLoups" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="LesPtitsLoups" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LesPtitsLoups" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="font-awesome" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -249,9 +306,9 @@
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../cds-api" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
-    <property name="SearchEverywhereHistoryKey" value="menu&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/Resources/views/menu.html.twig&#10;contact.h&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/Resources/views/contact.html.twig&#10;style&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/web/css/style.css&#10;base.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/Resources/views/base.html.twig&#10;contact&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/Resources/views/contact.html.twig&#10;sec&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/security.yml&#10;security&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/security.yml&#10;config.yml&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/config.yml&#10;security.yml&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/security.yml&#10;login_conte&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login_content.html.twig&#10;login.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login.html.twig&#10;config.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/config.yml&#10;base&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/Resources/views/base.html.twig&#10;config&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/config/config.yml&#10;paramet&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/config/parameters.yml&#10;menuc&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/src/AppBundle/Controller/MenuController.php&#10;sonata&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/sonata.yml&#10;apke&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/AppKernel.php&#10;service&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/services.yml&#10;menu.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/Resources/views/menu.html.twig&#10;routing.yml&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/routing.yml&#10;security.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/security.yml&#10;composer&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/composer.json&#10;config_pr&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/config_prod.yml&#10;style.&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/web/css/style.css" />
+    <property name="SearchEverywhereHistoryKey" value="base&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/Resources/views/base.html.twig&#10;bower.json&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/web/vendor/font-awesome/.bower.json&#10;bower.&#9;null&#9;null&#10;sonata&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/config/sonata.yml&#10;menu&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/Resources/views/menu.html.twig&#10;contact.h&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/Resources/views/contact.html.twig&#10;style&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/web/css/style.css&#10;base.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/Resources/views/base.html.twig&#10;contact&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/Resources/views/contact.html.twig&#10;sec&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/security.yml&#10;security&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/security.yml&#10;config.yml&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/config.yml&#10;security.yml&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/security.yml&#10;login_conte&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login_content.html.twig&#10;login.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login.html.twig&#10;config.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/config.yml&#10;config&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/config/config.yml&#10;paramet&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/config/parameters.yml&#10;menuc&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/src/AppBundle/Controller/MenuController.php&#10;apke&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/AppKernel.php&#10;service&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/services.yml&#10;menu.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/Resources/views/menu.html.twig&#10;routing.yml&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/routing.yml&#10;security.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/security.yml&#10;composer&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/composer.json&#10;config_pr&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/config_prod.yml&#10;style.&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/web/css/style.css" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -297,10 +354,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36718000" />
+    <option name="totallyTimeSpent" value="40873000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26302084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -346,69 +403,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/footer.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/a-propos.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AProposController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.bowerrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/vendor/bootstrap/dist/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/footer-basic-centered.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/vendor/jquery/dist/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/web-forms.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="595" column="16" lean-forward="false" selection-start-line="595" selection-start-column="16" selection-end-line="595" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -473,38 +467,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="21" column="77" lean-forward="false" selection-start-line="21" selection-start-column="77" selection-end-line="21" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/CategorieAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services_sonata.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/PlatAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -610,24 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="40" column="38" lean-forward="false" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
-          <folding>
-            <marker date="1517604967301" expanded="true" signature="2267:2279" ph="App\Entity\User" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/sonata.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -648,16 +596,6 @@
         <state relative-caret-position="651">
           <caret line="73" column="60" lean-forward="false" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding>
-            <element signature="e#812#828#0#Twig" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -703,6 +641,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="42" column="75" lean-forward="false" selection-start-line="42" selection-start-column="75" selection-end-line="42" selection-end-column="75" />
+          <folding>
+            <element signature="e#36#84#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Categorie.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2057">
@@ -711,30 +659,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Plat.php">
+    <entry file="file://$PROJECT_DIR$/web/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/tasks/bump_version.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2867">
-          <caret line="197" column="5" lean-forward="false" selection-start-line="197" selection-start-column="5" selection-end-line="197" selection-end-column="5" />
+        <state relative-caret-position="51">
+          <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Menu.php">
+    <entry file="file://$PROJECT_DIR$/web/vendor/font-awesome/bower.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="42" column="75" lean-forward="false" selection-start-line="42" selection-start-column="75" selection-end-line="42" selection-end-column="75" />
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/sonataadmin/vendor/iCheck/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/vendor/font-awesome/.bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/vendor/font-awesome/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="79" lean-forward="false" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
           <folding>
-            <element signature="e#36#84#0#PHP" expanded="true" />
+            <element signature="e#812#828#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="38" lean-forward="false" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <folding>
+            <marker date="1517604967301" expanded="true" signature="2267:2279" ph="App\Entity\User" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services_sonata.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="64" lean-forward="false" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/sonata.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/PlatAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Doctrine/Form/Type/EntityType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="21" column="6" lean-forward="false" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Plat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="827">
+          <caret line="201" column="78" lean-forward="false" selection-start-line="201" selection-start-column="78" selection-end-line="201" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/CategorieAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/ChoixAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="56" column="24" lean-forward="false" selection-start-line="53" selection-start-column="12" selection-end-line="59" selection-end-column="14" />
+          <folding>
+            <element signature="e#35#61#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Choix.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="36" column="75" lean-forward="false" selection-start-line="36" selection-start-column="75" selection-end-line="36" selection-end-column="75" />
+        <state relative-caret-position="827">
+          <caret line="133" column="31" lean-forward="false" selection-start-line="133" selection-start-column="31" selection-end-line="133" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/MenuAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
-            <element signature="e#36#84#0#PHP" expanded="true" />
+            <element signature="e#35#62#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

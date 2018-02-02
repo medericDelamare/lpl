@@ -128,4 +128,9 @@ class Choix
         $this->menu = $menu;
         return $this;
     }
+
+    public function __toString()
+    {
+        return $this->getNom();
+    }
 }

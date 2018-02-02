@@ -12,3 +12,17 @@ services:
         tags:
             - { name: sonata.admin, manager_type: orm, label: Plats, group: "categorie" }
         public: true
+
+  admin.choix:
+        class: AppBundle\Admin\ChoixAdmin
+        arguments: [~, AppBundle\Entity\Choix, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Choix, group: "categorie" }
+        public: true
+
+  admin.menus:
+        class: AppBundle\Admin\MenuAdmin
+        arguments: [~, AppBundle\Entity\Menu, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Menus, group: "categorie" }
+        public: true

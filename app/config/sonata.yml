@@ -4,9 +4,9 @@ sonata_admin:
     dashboard:
         groups:
             categorie:
-                label:           Categories
+                label:           Plats & Menus
                 label_catalogue: messages
-                icon:            '<i class="fa fa-sitemap"></i>'
+                icon:            '<i class="fas fa-utensils"></i>'
 sonata_block:
     default_contexts: [cms]
     blocks:
