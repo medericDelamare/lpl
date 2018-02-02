@@ -1,17 +1,17 @@
 <?php
 
-
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Class Plat
+ * Class Menu
  * @package AppBundle\Entity
  * @ORM\Entity
  * @ORM\Table()
  */
-class Plat
+class Menu
 {
     /**
      * @ORM\Id
@@ -33,35 +33,21 @@ class Plat
     private $code;
 
     /**
-     * @var string
-     * @ORM\Column(type="text")
-     */
-    private $description;
-
-    /**
-     * @var Categorie
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Categorie", inversedBy="plats")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $categorie;
-
-    /**
-     * @var int
-     * @ORM\Column(type="integer")
-     */
-    private $position;
-
-    /**
      * @var double
      * @ORM\Column(type="float")
      */
     private $prix;
 
     /**
-     * @var Choix
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Choix" ,inversedBy="plats")
+     * @var Choix[]
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Choix", mappedBy="menu")
      */
     private $choix;
+
+    public function __construct()
+    {
+        $this->choix = new ArrayCollection();
+    }
 
     /**
      * @return mixed
@@ -81,7 +67,7 @@ class Plat
 
     /**
      * @param string $nom
-     * @return Plat
+     * @return Menu
      */
     public function setNom($nom)
     {
@@ -99,65 +85,11 @@ class Plat
 
     /**
      * @param string $code
-     * @return Plat
+     * @return Menu
      */
     public function setCode($code)
     {
         $this->code = $code;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-        return $this->description;
-    }
-
-    /**
-     * @param string $description
-     * @return Plat
-     */
-    public function setDescription($description)
-    {
-        $this->description = $description;
-        return $this;
-    }
-
-    /**
-     * @return Categorie
-     */
-    public function getCategorie()
-    {
-        return $this->categorie;
-    }
-
-    /**
-     * @param Categorie $categorie
-     * @return Plat
-     */
-    public function setCategorie($categorie)
-    {
-        $this->categorie = $categorie;
-        return $this;
-    }
-
-    /**
-     * @return int
-     */
-    public function getPosition()
-    {
-        return $this->position;
-    }
-
-    /**
-     * @param int $position
-     * @return Plat
-     */
-    public function setPosition($position)
-    {
-        $this->position = $position;
         return $this;
     }
 
@@ -171,7 +103,7 @@ class Plat
 
     /**
      * @param float $prix
-     * @return Plat
+     * @return Menu
      */
     public function setPrix($prix)
     {
@@ -180,7 +112,7 @@ class Plat
     }
 
     /**
-     * @return Choix
+     * @return Choix[]
      */
     public function getChoix()
     {
@@ -188,8 +120,8 @@ class Plat
     }
 
     /**
-     * @param Choix $choix
-     * @return Plat
+     * @param Choix[] $choix
+     * @return Menu
      */
     public function setChoix($choix)
     {
