@@ -421,3 +421,14 @@ opacity:0.9;
 .choix-menu .plat-menu span{
     color: #339388;
 }
+
+.map-contact{
+    height: 500px;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block body %}
+    <div id="map" class="col-md-12 map-contact"></div>
     <section id="contact" class="content-section text-center">
         <div class="contact-section">
             <div class="container">
@@ -76,3 +77,22 @@
         </div>
     </section>
 {% endblock%}
+
+{% block javascripts %}
+    <script>
+        function initMap() {
+            var uluru = {lat: 49.364025, lng: 0.462554};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWdGusRdm9EIBqR9o6ONFbK5O31Ta91j4&callback=initMap">
+    </script>
+{% endblock %}

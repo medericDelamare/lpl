@@ -128,4 +128,23 @@ class Menu
         $this->choix = $choix;
         return $this;
     }
+
+    /**
+     * @param Choix $choix
+     * @return Menu
+     */
+    public function addChoix(Choix $choix){
+        $this->choix[] = $choix;
+        $choix->setMenu($this);
+        return $this;
+    }
+
+    /**
+     * @param Choix $choix
+     * @return $this
+     */
+    public function removeChoix(Choix $choix){
+        $this->choix->removeElement($choix);
+        return $this;
+    }
 }
