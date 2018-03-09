@@ -5,6 +5,7 @@ namespace AppBundle\Controller;
 use AppBundle\Entity\Categorie;
 use AppBundle\Entity\Menu;
 use AppBundle\Entity\Plat;
+use AppBundle\Entity\Vin\TypeVin;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -19,9 +20,11 @@ class MenuController extends Controller
         /** @var Categorie[] $categories */
         $categories = $this->getDoctrine()->getRepository(Categorie::class)->findAll();
         $menus = $this->getDoctrine()->getRepository(Menu::class)->findAll();
+        $typesVins = $this->getDoctrine()->getRepository(TypeVin::class)->findAll();
         return $this->render('menu.html.twig', [
             'categories' => $categories,
-            'menus' => $menus
+            'menus' => $menus,
+            'typesVins' => $typesVins
         ]);
     }
 }

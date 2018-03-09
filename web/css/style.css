@@ -432,3 +432,8 @@ opacity:0.9;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.m-quantite span:first-child {
+    color: #9B9B9B;
+    font-size: 10px;
+}
