@@ -15,23 +15,20 @@ class CategorieAdmin extends AbstractAdmin
     {
         $form
             ->add('nom')
-            ->add('code')
-            ->add('position');
+            ->add('code');
     }
 
     protected function configureDatagridFilters(DatagridMapper $filter)
     {
         $filter
             ->add('nom')
-            ->add('code')
-            ->add('position');
+            ->add('code');
     }
 
     protected function configureListFields(ListMapper $list)
     {
         $list
             ->addIdentifier('nom')
-            ->add('code')
-            ->add('position');
+            ->add('code');
     }
 }

@@ -5,6 +5,7 @@ namespace AppBundle\Admin;
 
 
 use AppBundle\Entity\Categorie;
+use AppBundle\Entity\Plat;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
@@ -17,21 +18,15 @@ class PlatAdmin extends AbstractAdmin
     {
         $form
             ->add('nom')
-            ->add('code')
-            ->add('categorie', EntityType::class, [
-                'class' => Categorie::class,
-                'choice_label' => 'nom',
-            ])
-            ->add('prix')
-            ->add('description')
-            ->add('position');
+            ->add('prix', null, ['required' => false])
+            ->add('description', null, ['required' => false])
+            ->add('position', null, ['required' => false]);
     }
 
     protected function configureDatagridFilters(DatagridMapper $filter)
     {
         $filter
             ->add('nom')
-            ->add('code')
             ->add('position');
     }
 
@@ -39,7 +34,13 @@ class PlatAdmin extends AbstractAdmin
     {
         $list
             ->addIdentifier('nom')
-            ->add('code')
             ->add('position');
+    }
+
+    public function toString($object)
+    {
+        return $object instanceof Plat
+            ? $object->getNom()
+            : 'Plat';
     }
 }

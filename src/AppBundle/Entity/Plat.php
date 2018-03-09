@@ -28,32 +28,19 @@ class Plat
 
     /**
      * @var string
-     * @ORM\Column(type="string")
-     */
-    private $code;
-
-    /**
-     * @var string
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="text", nullable=true)
      */
     private $description;
 
     /**
-     * @var Categorie
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Categorie", inversedBy="plats")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $categorie;
-
-    /**
      * @var int
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="integer", nullable=true)
      */
     private $position;
 
     /**
      * @var double
-     * @ORM\Column(type="float")
+     * @ORM\Column(type="float", nullable=true)
      */
     private $prix;
 
@@ -92,24 +79,6 @@ class Plat
     /**
      * @return string
      */
-    public function getCode()
-    {
-        return $this->code;
-    }
-
-    /**
-     * @param string $code
-     * @return Plat
-     */
-    public function setCode($code)
-    {
-        $this->code = $code;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
     public function getDescription()
     {
         return $this->description;
@@ -122,24 +91,6 @@ class Plat
     public function setDescription($description)
     {
         $this->description = $description;
-        return $this;
-    }
-
-    /**
-     * @return Categorie
-     */
-    public function getCategorie()
-    {
-        return $this->categorie;
-    }
-
-    /**
-     * @param Categorie $categorie
-     * @return Plat
-     */
-    public function setCategorie($categorie)
-    {
-        $this->categorie = $categorie;
         return $this;
     }
 
@@ -199,6 +150,6 @@ class Plat
 
     public function __toString()
     {
-        return $this->getNom() . ' (' . $this->getCategorie()->getNom() . ')';
+        return $this->nom;
     }
 }

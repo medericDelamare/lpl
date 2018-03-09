@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\Categorie;
+use AppBundle\Entity\CategorieMenu;
 use AppBundle\Entity\Menu;
 use AppBundle\Entity\Plat;
 use AppBundle\Entity\Vin\TypeVin;
@@ -18,7 +19,7 @@ class MenuController extends Controller
     public function show()
     {
         /** @var Categorie[] $categories */
-        $categories = $this->getDoctrine()->getRepository(Categorie::class)->findAll();
+        $categories = $this->getDoctrine()->getRepository(CategorieMenu::class)->findAll();
         $menus = $this->getDoctrine()->getRepository(Menu::class)->findAll();
         $typesVins = $this->getDoctrine()->getRepository(TypeVin::class)->findAll();
         return $this->render('menu.html.twig', [

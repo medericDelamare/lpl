@@ -44,6 +44,13 @@ class Menu
      */
     private $choix;
 
+    /**
+     * @var CategorieMenu
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\CategorieMenu", inversedBy="menus")
+     * @ORM\JoinColumn(name="categorie_menu_id", referencedColumnName="id", nullable=true)
+     */
+    private $categorie;
+
     public function __construct()
     {
         $this->choix = new ArrayCollection();
@@ -145,6 +152,24 @@ class Menu
      */
     public function removeChoix(Choix $choix){
         $this->choix->removeElement($choix);
+        return $this;
+    }
+
+    /**
+     * @return CategorieMenu
+     */
+    public function getCategorie()
+    {
+        return $this->categorie;
+    }
+
+    /**
+     * @param CategorieMenu $categorie
+     * @return Menu
+     */
+    public function setCategorie($categorie)
+    {
+        $this->categorie = $categorie;
         return $this;
     }
 }

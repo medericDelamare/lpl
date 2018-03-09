@@ -1,7 +1,7 @@
 services:
   admin.categorie:
         class: AppBundle\Admin\CategorieAdmin
-        arguments: [~, AppBundle\Entity\Categorie, ~]
+        arguments: [~, AppBundle\Entity\CategorieMenu, ~]
         tags:
             - { name: sonata.admin, manager_type: orm, label: Categories, group: "categorie" }
         public: true

@@ -73,4 +73,6 @@ class MenuAdmin extends AbstractAdmin
             ->add('prix')
         ;
     }
+
+
 }

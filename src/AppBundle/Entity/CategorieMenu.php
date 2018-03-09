@@ -6,14 +6,13 @@ namespace AppBundle\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
-
 /**
- * Class Plat
+ * Class Menu
  * @package AppBundle\Entity
  * @ORM\Entity
  * @ORM\Table()
  */
-class Categorie
+class CategorieMenu
 {
     /**
      * @ORM\Id
@@ -35,21 +34,10 @@ class Categorie
     private $code;
 
     /**
-     * @var int
-     * @ORM\Column(type="integer")
+     * @var ArrayCollection
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Menu", mappedBy="categorie")
      */
-    private $position;
-
-    /**
-     * @var Plat[]
-     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Plat", mappedBy="categorie")
-     */
-    private $plats;
-
-    public function __construct()
-    {
-        $this->plats = new ArrayCollection();
-    }
+    private $menus;
 
     /**
      * @return mixed
@@ -69,7 +57,7 @@ class Categorie
 
     /**
      * @param string $nom
-     * @return Categorie
+     * @return CategorieMenu
      */
     public function setNom($nom)
     {
@@ -87,7 +75,7 @@ class Categorie
 
     /**
      * @param string $code
-     * @return Categorie
+     * @return CategorieMenu
      */
     public function setCode($code)
     {
@@ -96,38 +84,20 @@ class Categorie
     }
 
     /**
-     * @return int
+     * @return ArrayCollection
      */
-    public function getPosition()
+    public function getMenus()
     {
-        return $this->position;
+        return $this->menus;
     }
 
     /**
-     * @param int $position
-     * @return Categorie
+     * @param ArrayCollection $menus
+     * @return CategorieMenu
      */
-    public function setPosition($position)
+    public function setMenus($menus)
     {
-        $this->position = $position;
-        return $this;
-    }
-
-    /**
-     * @return Plat[]
-     */
-    public function getPlats()
-    {
-        return $this->plats;
-    }
-
-    /**
-     * @param Plat[] $plats
-     * @return Categorie
-     */
-    public function setPlats($plats)
-    {
-        $this->plats = $plats;
+        $this->menus = $menus;
         return $this;
     }
 }

@@ -2,6 +2,7 @@
 
 namespace AppBundle\Admin;
 
+use AppBundle\Entity\Choix;
 use AppBundle\Entity\Plat;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
@@ -70,5 +71,12 @@ class ChoixAdmin extends AbstractAdmin
             ->add('nom')
             ->add('code')
         ;
+    }
+
+    public function toString($object)
+    {
+        return $object instanceof Choix
+            ? $object->getNom()
+            : 'Choix';
     }
 }

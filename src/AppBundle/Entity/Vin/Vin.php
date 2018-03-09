@@ -48,7 +48,7 @@ class Vin
     /**
      * @var TypeVin
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Vin\TypeVin", inversedBy="vins")
-     * @ORM\JoinColumn(name="type_id", referencedColumnName="id", nullable=true)
+     * @ORM\JoinColumn(name="type_id", referencedColumnName="id", nullable=false)
      */
     private $type;
 
