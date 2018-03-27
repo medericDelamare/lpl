@@ -111,6 +111,21 @@ class Choix
         return $this;
     }
 
+    public function addPlat(Plat $plat){
+        if (!$this->plats->contains($plat)){
+            $this->plats->add($plat);
+            $plat->setChoix($this);
+        }
+        return $this;
+    }
+
+    public function removePlat(Plat $plat){
+        if ($this->plats->contains($plat)){
+            $this->plats->remove($plat);
+        }
+        return $this;
+    }
+
     /**
      * @return Menu
      */
@@ -131,6 +146,6 @@ class Choix
 
     public function __toString()
     {
-        return $this->getNom();
+        return $this->getNom()?: 'Choix';
     }
 }

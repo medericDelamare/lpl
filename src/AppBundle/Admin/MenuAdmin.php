@@ -52,6 +52,7 @@ class MenuAdmin extends AbstractAdmin
             ->add('nom')
             ->add('code')
             ->add('prix')
+            ->add('categorie')
             ->add('choix', 'sonata_type_model', [
                 'class' => Choix::class,
                 'by_reference' => false,

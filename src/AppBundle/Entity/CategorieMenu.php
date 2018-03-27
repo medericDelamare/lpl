@@ -100,4 +100,9 @@ class CategorieMenu
         $this->menus = $menus;
         return $this;
     }
+
+    public function __toString()
+    {
+        return $this->getNom() ?: 'Catégorie';
+    }
 }

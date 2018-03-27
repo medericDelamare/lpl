@@ -5,34 +5,13 @@
     <div class="container-full">
         <h1 class="text-center">Cartes et menus</h1>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-5 offset-1">
                 <h2 class="text-center">Cartes</h2>
-                {% for categorie in categories %}
-                <div class="m-categorie">
-                    <div class="m-title-categorie">
-                        <h3 class="text-center">{{ categorie.nom }}</h3>
-                    </div>
-                    {% for plat in categorie.plats %}
-                    <div class="m-plat-info">
-                        <div class="m-titre-plat">
-                            <span class="m-nom-plat m-photo-active">{{ plat.nom }}</span>
-                        </div>
-                        <span class="m-separateur"></span>
-                        <div class="m-prix">
-                            <div class="m-quantite">
-                                <span>{{ plat.prix }}€</span>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="m-description-plat">{{ plat.description }}</p>
-                    {% endfor %}
-                </div>
-                {% endfor %}
-                <h2 class="text-center">Carte des vins</h2>
+                <h3 class="text-center">Carte des vins</h3>
                 {% for typeVin in typesVins %}
                     <div class="m-categorie">
                         <div class="m-title-categorie">
-                            <h3 class="text-center">{{ typeVin.nom }}</h3>
+                            <h4 class="text-center">{{ typeVin.nom }}</h4>
                         </div>
                         {% for vin in typeVin.vins %}
                             <div class="m-plat-info">
@@ -61,12 +40,15 @@
                     </div>
                 {% endfor %}
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <h2 class="text-center">Menus</h2>
-                {% for menu in menus %}
+                {% for categorie in categories %}
+                    <h3 class="text-center">{{ categorie.nom }}</h3>
+
+                {% for menu in categorie.menus %}
                     <div class="m-categorie">
                         <div class="m-title-categorie">
-                            <h3 class="text-center">{{ menu.nom }} - <small class="prix-menu">{{ menu.prix }}€</small></h3>
+                            <h4 class="text-center">{{ menu.nom }} - <small class="prix-menu">{{ menu.prix }}€</small></h4>
                         </div>
                         {% for choix in menu.choix %}
                             {% set i = 1 %}
@@ -83,6 +65,7 @@
                             </div>
                         {% endfor %}
                     </div>
+                {% endfor %}
                 {% endfor %}
             </div>
         </div>
