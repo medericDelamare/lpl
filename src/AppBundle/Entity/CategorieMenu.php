@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Class Menu
  * @package AppBundle\Entity
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\CategorieMenuRepository")
  * @ORM\Table()
  */
 class CategorieMenu
@@ -36,8 +36,14 @@ class CategorieMenu
     /**
      * @var ArrayCollection
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\Menu", mappedBy="categorie")
+     * @ORM\OrderBy({"position" = "ASC"})
      */
     private $menus;
+    /**
+     * @var integer
+     * @ORM\Column(type="integer", nullable=false)
+     */
+    private $position;
 
     /**
      * @return mixed
@@ -98,6 +104,24 @@ class CategorieMenu
     public function setMenus($menus)
     {
         $this->menus = $menus;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPosition()
+    {
+        return $this->position;
+    }
+
+    /**
+     * @param int $position
+     * @return CategorieMenu
+     */
+    public function setPosition($position)
+    {
+        $this->position = $position;
         return $this;
     }
 

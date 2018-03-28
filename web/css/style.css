@@ -39,6 +39,20 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.parallax-menu {
+    /* The image used */
+    background-image: url("../images/vin.jpg");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .parallax2 {
     /* The image used */
     background-image: url("../images/salle.jpg");
@@ -412,7 +426,7 @@ opacity:0.9;
 .choix-menu{
     text-align: center;
     padding-top: 30px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     background-color: #FFF;
     z-index: 10;

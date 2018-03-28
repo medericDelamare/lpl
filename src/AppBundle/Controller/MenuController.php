@@ -20,11 +20,9 @@ class MenuController extends Controller
     {
         /** @var Categorie[] $categories */
         $categories = $this->getDoctrine()->getRepository(CategorieMenu::class)->findAll();
-        $menus = $this->getDoctrine()->getRepository(Menu::class)->findAll();
         $typesVins = $this->getDoctrine()->getRepository(TypeVin::class)->findAll();
         return $this->render('menu.html.twig', [
             'categories' => $categories,
-            'menus' => $menus,
             'typesVins' => $typesVins
         ]);
     }

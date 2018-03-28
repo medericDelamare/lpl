@@ -21,6 +21,7 @@ class MenuAdmin extends AbstractAdmin
             ->add('nom')
             ->add('code')
             ->add('prix')
+            ->add('position')
         ;
     }
 
@@ -33,6 +34,7 @@ class MenuAdmin extends AbstractAdmin
             ->add('nom')
             ->add('code')
             ->add('prix')
+            ->add('position')
             ->add('_action', null, array(
                 'actions' => array(
                     'show' => array(),
@@ -53,6 +55,7 @@ class MenuAdmin extends AbstractAdmin
             ->add('code')
             ->add('prix')
             ->add('categorie')
+            ->add('position')
             ->add('choix', 'sonata_type_model', [
                 'class' => Choix::class,
                 'by_reference' => false,

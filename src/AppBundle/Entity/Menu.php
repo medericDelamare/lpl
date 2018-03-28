@@ -51,6 +51,12 @@ class Menu
      */
     private $categorie;
 
+    /**
+     * @var integer
+     * @ORM\Column(type="integer", nullable=false)
+     */
+    private $position;
+
     public function __construct()
     {
         $this->choix = new ArrayCollection();
@@ -156,6 +162,24 @@ class Menu
     }
 
     /**
+     * @return int
+     */
+    public function getPosition()
+    {
+        return $this->position;
+    }
+
+    /**
+     * @param int $position
+     * @return Menu
+     */
+    public function setPosition($position)
+    {
+        $this->position = $position;
+        return $this;
+    }
+
+    /**
      * @return CategorieMenu
      */
     public function getCategorie()
@@ -172,4 +196,6 @@ class Menu
         $this->categorie = $categorie;
         return $this;
     }
+
+
 }
