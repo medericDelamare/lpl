@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75a31430-3182-4a88-b8f8-b3eb542bdb80" name="Default" comment="" />
+    <list default="true" id="75a31430-3182-4a88-b8f8-b3eb542bdb80" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/navbar.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/navbar.html.twig" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,16 +14,26 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="97" column="108" lean-forward="false" selection-start-line="97" selection-start-column="108" selection-end-line="97" selection-end-column="108" />
-              <folding>
-                <element signature="e#238#266#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="677">
+              <caret line="116" column="10" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="116" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -29,8 +41,18 @@
       <file leaf-file-name="menu.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/menu.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+            <state relative-caret-position="187">
+              <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/navbar.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="105" lean-forward="false" selection-start-line="2" selection-start-column="105" selection-end-line="2" selection-end-column="105" />
               <folding />
             </state>
           </provider>
@@ -39,59 +61,44 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="432" column="1" lean-forward="false" selection-start-line="432" selection-start-column="1" selection-end-line="432" selection-end-column="1" />
+            <state relative-caret-position="861">
+              <caret line="511" column="1" lean-forward="false" selection-start-line="511" selection-start-column="1" selection-end-line="511" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Menu.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Menu.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="64" column="7" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuAdmin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/MenuAdmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategorieMenu.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/CategorieMenu.php">
+      <file leaf-file-name="ContactController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ContactController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="41" />
+              <folding>
+                <element signature="e#40#71#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/contact.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MenuController.php">
+      <file leaf-file-name="buffet_froid.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/buffet_froid.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategorieMenuRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/CategorieMenuRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="317">
+              <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+              <folding>
+                <element signature="e#12#26#0#Twig" expanded="true" />
+                <element signature="e#2693#2991#0#HTML" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,6 +131,7 @@
       <find>posi²</find>
       <find>menus</find>
       <find>slide</find>
+      <find>paralla</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,7 +159,6 @@
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/navbar.html.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/app/config/sonata.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/contact.html.twig" />
@@ -167,8 +174,6 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Plat.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Choix.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Admin/ChoixAdmin.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/menu.html.twig" />
-        <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Menu.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Admin/MenuAdmin.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/MenuController.php" />
@@ -176,6 +181,11 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/CategorieMenuRepository.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/CategorieMenu.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/BuffetFroidController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/menu.html.twig" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/app/Resources/views/buffet_froid.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/navbar.html.twig" />
       </list>
     </option>
   </component>
@@ -251,7 +261,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="1710" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
@@ -271,59 +281,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="les-petits-loups" type="b2602c69:ProjectViewProjectNode" />
-              <item name="les-petits-loups" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="LesPtitsLoups" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LesPtitsLoups" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="les-petits-loups" type="b2602c69:ProjectViewProjectNode" />
-              <item name="les-petits-loups" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="LesPtitsLoups" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LesPtitsLoups" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="les-petits-loups" type="b2602c69:ProjectViewProjectNode" />
-              <item name="les-petits-loups" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="LesPtitsLoups" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LesPtitsLoups" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="les-petits-loups" type="b2602c69:ProjectViewProjectNode" />
-              <item name="les-petits-loups" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="les-petits-loups" type="b2602c69:ProjectViewProjectNode" />
-              <item name="les-petits-loups" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="les-petits-loups" type="b2602c69:ProjectViewProjectNode" />
-              <item name="les-petits-loups" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repository" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="les-petits-loups" type="b2602c69:ProjectViewProjectNode" />
-              <item name="les-petits-loups" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="LesPtitsLoups" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LesPtitsLoups" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="les-petits-loups" type="b2602c69:ProjectViewProjectNode" />
-              <item name="les-petits-loups" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -331,10 +317,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="SearchEverywhereHistoryKey" value="menu.html&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/Resources/views/menu.html.twig&#10;style&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/web/css/style.css&#10;index&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/Resources/views/index.html.twig&#10;menu&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/Resources/views/menu.html.twig&#10;Menu&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/src/AppBundle/Entity/Menu.php&#10;me&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/src/AppBundle/Entity/Menu.php&#10;AppKer&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/AppKernel.php&#10;footer.&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/Resources/views/footer.html.twig&#10;footer&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/web/vendor/bootstrap/_includes/footer.html&#10;contact&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/Resources/views/contact.html.twig&#10;style.css&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/web/css/style.css&#10;base&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/Resources/views/base.html.twig&#10;bower.json&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/web/vendor/font-awesome/.bower.json&#10;bower.&#9;null&#9;null&#10;sonata&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/config/sonata.yml&#10;contact.h&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/Resources/views/contact.html.twig&#10;base.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/Resources/views/base.html.twig&#10;sec&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/security.yml&#10;security&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/security.yml&#10;config.yml&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/config.yml&#10;security.yml&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/security.yml&#10;login_conte&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login_content.html.twig&#10;login.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login.html.twig&#10;config.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/config.yml&#10;config&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/config/config.yml&#10;paramet&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/config/parameters.yml&#10;menuc&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/src/AppBundle/Controller/MenuController.php&#10;apke&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/AppKernel.php&#10;service&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/services.yml&#10;menu.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/Resources/views/menu.html.twig&#10;routing.yml&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/routing.yml&#10;security.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/security.yml&#10;composer&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/composer.json&#10;config_pr&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/config_prod.yml&#10;style.&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/web/css/style.css" />
+    <property name="SearchEverywhereHistoryKey" value="navbar&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/Resources/views/navbar.html.twig&#10;sty&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/web/css/style.css&#10;contact.html&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/Resources/views/contact.html.twig&#10;contact&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/src/AppBundle/Controller/ContactController.php&#10;index.&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/Resources/views/index.html.twig&#10;menu&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/Resources/views/menu.html.twig&#10;style.css&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/web/css/style.css&#10;menu.&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/Resources/views/menu.html.twig&#10;menu.html&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/Resources/views/menu.html.twig&#10;style&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/web/css/style.css&#10;index&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/Resources/views/index.html.twig&#10;Menu&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/src/AppBundle/Entity/Menu.php&#10;me&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/src/AppBundle/Entity/Menu.php&#10;AppKer&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/AppKernel.php&#10;footer.&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/Resources/views/footer.html.twig&#10;footer&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/web/vendor/bootstrap/_includes/footer.html&#10;base&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/Resources/views/base.html.twig&#10;bower.json&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/web/vendor/font-awesome/.bower.json&#10;bower.&#9;null&#9;null&#10;sonata&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/config/sonata.yml&#10;contact.h&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/Resources/views/contact.html.twig&#10;base.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/Resources/views/base.html.twig&#10;sec&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/security.yml&#10;security&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/security.yml&#10;config.yml&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/config.yml&#10;security.yml&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/security.yml&#10;login_conte&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login_content.html.twig&#10;login.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login.html.twig&#10;config.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/config.yml&#10;config&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/config/config.yml&#10;paramet&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/app/config/parameters.yml&#10;menuc&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/src/AppBundle/Controller/MenuController.php&#10;apke&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/AppKernel.php&#10;service&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/services.yml&#10;routing.yml&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/routing.yml&#10;security.&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/security.yml&#10;composer&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/composer.json&#10;config_pr&#9;FILE&#9;file://C:/wamp64/www/les-petits-loups/app/config/config_prod.yml&#10;style.&#9;FILE&#9;file://C:/Workspace/wamp64/www/LesPtitsLoups/web/css/style.css" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Workspace\wamp64\www\LesPtitsLoups\web\images" />
       <recent name="C:\wamp64\www\les-petits-loups\web\images" />
       <recent name="C:\Workspace\wamp64\www\LesPtitsLoups\web\css" />
       <recent name="C:\Workspace\wamp64\www\LesPtitsLoups\src\AppBundle\Controller" />
@@ -382,27 +369,28 @@
       <workItem from="1522180732991" duration="5485000" />
       <workItem from="1522264079926" duration="2091000" />
       <workItem from="1522267150358" duration="4773000" />
+      <workItem from="1523474533945" duration="8500000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79850000" />
+    <option name="totallyTimeSpent" value="88350000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28038067" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28020832" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -423,62 +411,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20180126120513.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/AppBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -518,13 +450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
           <caret line="73" column="60" lean-forward="false" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/navbar.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="51" lean-forward="false" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -606,13 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/contact.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="38" lean-forward="false" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/footer.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -627,35 +545,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Vin/TypeVin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/VinFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2822">
-          <caret line="170" column="4" lean-forward="false" selection-start-line="170" selection-start-column="4" selection-end-line="203" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/MenuFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Vin/TypeVin.php" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/VinFixtures.php" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/MenuFixtures.php" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Categorie.php" />
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Vin/Vin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Vin/Vin.php" />
     <entry file="file://$PROJECT_DIR$/app/config/sonata.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -717,28 +611,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/CategorieMenuRepository.php" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/CategorieMenu.php" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Menu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="97" column="108" lean-forward="false" selection-start-line="97" selection-start-column="108" selection-end-line="97" selection-end-column="108" />
-          <folding>
-            <element signature="e#238#266#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/menu.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="432" column="1" lean-forward="false" selection-start-line="432" selection-start-column="1" selection-end-line="432" selection-end-column="1" />
+        <state relative-caret-position="314">
+          <caret line="77" column="7" lean-forward="false" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -746,39 +624,133 @@
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/MenuAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="64" column="7" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="7" />
+          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MenuController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="221">
+          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding>
+            <marker date="1523473653053" expanded="true" signature="796:815" ph="{...}" />
+            <marker date="1523473653053" expanded="true" signature="796:817" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/CategorieMenuRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/BuffetFroidController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="255">
+          <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <element signature="e#126#183#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/CategorieMenu.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ContactController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="41" />
+          <folding>
+            <element signature="e#40#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/slick-1.8.0 (1)/slick-1.8.0/slick/slick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/slick-1.8.0 (1)/slick-1.8.0/slick/slick.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/contact.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/slick.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/vendor/slick/slick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="511" column="1" lean-forward="false" selection-start-line="511" selection-start-column="1" selection-end-line="511" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="124" column="18" lean-forward="false" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/buffet_froid.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+            <element signature="e#2693#2991#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="116" column="10" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="116" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/menu.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/navbar.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="105" lean-forward="false" selection-start-line="2" selection-start-column="105" selection-end-line="2" selection-end-column="105" />
           <folding />
         </state>
       </provider>

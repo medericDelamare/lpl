@@ -9,8 +9,13 @@
             <li class="nav-item active">
                 <a class="nav-link" href="{{ path('menu') }}">Cartes & Menus <span class="sr-only"></span></a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Traiteur <span class="sr-only"></span></a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Traiteur
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{ path('buffet_froid') }}">Buffet froid</a>
+                </div>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="{{ path('contact') }}">Contact <span class="sr-only"></span></a>
@@ -23,7 +28,6 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fa fa-lock"></i>
-
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                     {{ render(controller('FOSUserBundle:Security:login')) }}

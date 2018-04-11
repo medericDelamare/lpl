@@ -40,6 +40,20 @@
     background-size: cover;
 }
 
+.parallax-buffet-froid {
+    /* The image used */
+    background-image: url("../images/buffet-froid.jpg");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .parallax-menu {
     /* The image used */
     background-image: url("../images/vin.jpg");
@@ -450,4 +464,49 @@ opacity:0.9;
 .m-quantite span:first-child {
     color: #9B9B9B;
     font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-for{
+    width: 500px;
+    height: 250px;
+    margin: 30px auto 1px;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    min-height: 100%;
+}
+.slider-nav{
+    width: 500px;
+    height: 85px;
+    margin: auto;
+}
+.slider-nav .slick-track{
+    height: 85px;
+}
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 50;
+    margin-top: -12px;
+}
+.slick-prev{
+    left: 0;
+}
+.slick-next{
+    right: 0;
 }

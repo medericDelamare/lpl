@@ -1,0 +1,153 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/slick.css') }}"/>
+    // Add the new slick-theme.css if you want the default styling
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/slick-theme.css') }}"/>
+{% endblock %}
+
+{% block body %}
+    <div class="parallax-buffet-froid"></div>
+    <div class="container-full">
+        <div class="slider-for">
+            <div class="item">
+                <img src="{{ asset('images/buffet-froid/slide1.jpg') }}" alt="image"  draggable="false"/>
+            </div>
+            <div class="item">
+                <img src="{{ asset('images/buffet-froid/slide2.jpg') }}" alt="image" draggable="false"/>
+            </div>
+            <div class="item">
+                <img src="{{ asset('images/buffet-froid/slide3.jpg') }}" alt="image" draggable="false"/>
+            </div>
+            <div class="item">
+                <img src="{{ asset('images/buffet-froid/slide4.jpg') }}" alt="image" draggable="false"/>
+            </div>
+            <div class="item">
+                <img src="{{ asset('images/buffet-froid/slide5.jpg') }}" alt="image" draggable="false"/>
+            </div>
+            <div class="item">
+                <img src="{{ asset('images/buffet-froid/slide6.jpg') }}" alt="image" draggable="false"/>
+            </div>
+            <div class="item">
+                <img src="{{ asset('images/buffet-froid/slide7.jpg') }}" alt="image" draggable="false"/>
+            </div>
+        </div>
+
+        <div class="slider-nav">
+            <div class="item">
+                <img src="{{ asset('images/buffet-froid/slide1.jpg') }}" alt="image"  draggable="false"/>
+            </div>
+            <div class="item">
+                <img src="{{ asset('images/buffet-froid/slide2.jpg') }}" alt="image" draggable="false"/>
+            </div>
+            <div class="item">
+                <img src="{{ asset('images/buffet-froid/slide3.jpg') }}" alt="image" draggable="false"/>
+            </div>
+            <div class="item">
+                <img src="{{ asset('images/buffet-froid/slide4.jpg') }}" alt="image" draggable="false"/>
+            </div>
+            <div class="item">
+                <img src="{{ asset('images/buffet-froid/slide5.jpg') }}" alt="image" draggable="false"/>
+            </div>
+            <div class="item">
+                <img src="{{ asset('images/buffet-froid/slide6.jpg') }}" alt="image" draggable="false"/>
+            </div>
+            <div class="item">
+                <img src="{{ asset('images/buffet-froid/slide7.jpg') }}" alt="image" draggable="false"/>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6 offset-3">
+                <p class="border border-danger text-center">
+                    Livraison gratuite à partir de 30 personnes <br>
+                    50€ d'accompte à la reservation
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-5 offset-1 text-center">
+                <h1 class="text-center">Menu Buffet froid - 17€</h1>
+                <br>
+
+                <h2>Crudités</h2>
+                <p>( Salade de riz, Piémontaise, Paysanne, Carotte, Salade de choux )</p>
+
+                <h2>Charcuterie</h2>
+                <p>( Jambon sec, Andouille, Salami, Mortadelle, Rosette, Saucisson )</p>
+
+                <h2>Viandes</h2>
+                <p>( Rôti de boeuf, Gigot d'agneau, poulet, Rôti de porc )</p>
+
+                <h2>Salades</h2>
+                <p>( Salades verte de saison et son assaisonnement )</p>
+
+                <h2>Fromages</h2>
+                <p>( Camembert, Pont-l'Evêque, Saint paulin, Chèvre, Bresse bleu )</p>
+
+                <h2>Pain</h2>
+                <p>( Campagne ou Baguettes )</p>
+
+                <h2>Divers</h2>
+                <p>( Cornichon, Moutarde, Mayonnaise )</p>
+            </div>
+            <div class="col-md-5 text-center">
+                <h1 class="text-center">Suppléments</h1>
+                <br>
+                <h2>Petit four chaud</h2>
+                <p>( 0,50€ pièce )</p>
+
+                <h2>Petit four froid</h2>
+                <p>( 0,60€ pièce )</p>
+
+                <h2>Grand pain surprise</h2>
+                <p>( 25€ pour environ 64 toats  )</p>
+
+                <h2>Marquise de Saumon</h2>
+                <p>( 2,80€ par personne )</p>
+
+                <h2>Saumon frais</h2>
+                <p>( 40€ pièce pour environ 2 à 3 kilos )</p>
+
+                <h2>Saumon farcie</h2>
+                <p>( 45€ pièce pour environ 2 à 3 kilos )</p>
+
+                <h2>Terrine de poisson</h2>
+                <p>( 25€ pièce )</p>
+
+                <h2>Terrine de pâté</h2>
+                <p>( 20€ pièce )</p>
+
+                <h2>Jambon à l'os</h2>
+                <p>( 90€ pièce )</p>
+            </div>
+        </div>
+    </div>
+{% endblock%}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('vendor/slick/slick.js') }}"></script>
+
+    <script type="text/javascript">
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav',
+            autoplay: true
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true
+
+        });
+
+
+    </script>
+{% endblock %}
