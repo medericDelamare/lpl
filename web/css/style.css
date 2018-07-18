@@ -1,3 +1,7 @@
+:root{
+    --principal-color: #9b1212;
+}
+
 .navbar-light .navbar-brand {
     color: #FFFFFF;
     font-family: Pacifico;
@@ -335,7 +339,7 @@ ul {
 .m-plat-info .m-prix .m-quantite span:last-child {
     font-size: 16px;
     font-weight: 700;
-    color: #339388;
+    color: var(--principal-color);
 }
 
 .m-description-plat {
@@ -363,8 +367,9 @@ ul {
 }
 
 .m-categorie {
-    box-shadow: inset 0 7px 10px -9px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 7px 10px -9px var(--principal-color);
     padding: 15px 5px 25px 5px;
+    border: 2px solid #F4F4F4;
 }
 a.btt {
     display: none;
@@ -434,7 +439,7 @@ opacity:0.9;
 
 
 .prix-menu{
-    color: #339388;
+    color: var(--principal-color);
 }
 
 .choix-menu{
@@ -447,7 +452,7 @@ opacity:0.9;
 }
 
 .choix-menu .plat-menu span{
-    color: #339388;
+    color: var(--principal-color);
 }
 
 .map-contact{
@@ -465,20 +470,6 @@ opacity:0.9;
     color: #9B9B9B;
     font-size: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .slider-for{
     width: 500px;
@@ -509,4 +500,42 @@ img{
 }
 .slick-next{
     right: 0;
+}
+
+.title-container {
+    position: relative;
+    z-index: 300;
+    text-align: center;
+    margin-top: -35px;
+    margin-bottom: 60px;
+}
+
+.title-container .title-page {
+    position: relative;
+    background-color: #2B2B2B;
+    padding: 18px 25px;
+    display: inline-block;
+    color: white;
+}
+
+.title-container .title-page:after {
+    content: '';
+    border: 3px solid var(--principal-color);
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.m-menu {
+    margin-top: 37px;
+    border: 2px solid #F4F4F4;
+    border-top-color: var(--principal-color);
+    overflow: hidden;
+    position: relative;
+}
+
+.couleur-principale{
+    color: var(--principal-color);
 }

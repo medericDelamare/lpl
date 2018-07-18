@@ -2,75 +2,121 @@
 
 {% block body %}
     <div class="parallax-menu"></div>
+    <section class="container title-container">
+        <div class="title-page">
+            <h2> Carte &amp; Menus </h2>
+        </div>
+    </section>
     <div class="container-full">
-        <h1 class="text-center">Cartes et menus</h1>
         <div class="row">
-            <div class="col-md-5 offset-1">
-                <h2 class="text-center">Cartes</h2>
+            <div class="col-md-10 offset-1">
+                <h2 class="text-center m-menu">Cartes</h2>
                 <h3 class="text-center">Carte des vins</h3>
-                {% for typeVin in typesVins %}
-                    <div class="m-categorie">
-                        <div class="m-title-categorie">
-                            <h4 class="text-center">{{ typeVin.nom }}</h4>
-                        </div>
-                        {% for vin in typeVin.vins %}
-                            <div class="m-plat-info">
-                                <div class="m-titre-plat">
-                                    <span class="m-nom-plat m-photo-active">{{ vin.nom }}</span>
-                                </div>
-                                <span class="m-separateur"></span>
-                                <div class="m-prix">
-                                    <div class="m-quantite">
-                                        {% if typeVin.code != 'pichet' %}
-                                        <span>75cl</span>
-                                        {% endif %}
-                                        <span>{{ vin.prix1 }}€</span>
-                                    </div>
-                                    {% if typeVin.code != 'pichet' %}
-                                    <div class="m-quantite">
-                                        {% if typeVin.code != 'pichet' %}
-                                            <span>37,5cl</span>
-                                        {% endif %}
-                                        {% if vin.prix2 %}<span>{{ vin.prix2 }}€</span>{% else %}<span>-</span>{% endif %}
-                                    </div>
-                                    {% endif %}
-                                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                {% for key,typeVin in typesVins %}
+                    {% if(key%2 == 0) %}
+                        <div class="m-categorie">
+                            <div class="m-title-categorie">
+                                <h4 class="text-center couleur-principale">{{ typeVin.nom }}</h4>
                             </div>
-                        {% endfor %}
-                    </div>
+                            {% for vin in typeVin.vins %}
+                                <div class="m-plat-info">
+                                    <div class="m-titre-plat">
+                                        <span class="m-nom-plat m-photo-active">{{ vin.nom }}</span>
+                                    </div>
+                                    <span class="m-separateur"></span>
+                                    <div class="m-prix">
+                                        <div class="m-quantite">
+                                            {% if typeVin.code != 'pichet' %}
+                                                <span>75cl</span>
+                                            {% endif %}
+                                            <span>{{ vin.prix1 }}€</span>
+                                        </div>
+                                        {% if typeVin.code != 'pichet' %}
+                                            <div class="m-quantite">
+                                                {% if typeVin.code != 'pichet' %}
+                                                    <span>37,5cl</span>
+                                                {% endif %}
+                                                {% if vin.prix2 %}<span>{{ vin.prix2 }}€</span>{% else %}<span>-</span>{% endif %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
                 {% endfor %}
             </div>
-            <div class="col-md-5">
-                <h2 class="text-center">Menus</h2>
-                {% for categorie in categories %}
-                    <h3 class="text-center">{{ categorie.nom }}</h3>
-
-                {% for menu in categorie.menus %}
-                    <div class="m-categorie">
-                        <div class="m-title-categorie">
-                            <h4 class="text-center">{{ menu.nom }} - <small class="prix-menu">{{ menu.prix }}€</small></h4>
-                        </div>
-                        {% for choix in menu.choix %}
-                            {% set i = 1 %}
-                            <div class="choix-menu">
-                                {% for plat in choix.plats %}
-                                    <div class="plat-menu">
-                                        {{ plat.nom }}
-                                        {% if i < choix.plats|length %}
-                                            </br><span>OU</span>
+            <div class="col-md-6">
+                {% for key,typeVin in typesVins %}
+                    {% if(key%2 != 0) %}
+                        <div class="m-categorie">
+                            <div class="m-title-categorie">
+                                <h4 class="text-center couleur-principale">{{ typeVin.nom }}</h4>
+                            </div>
+                            {% for vin in typeVin.vins %}
+                                <div class="m-plat-info">
+                                    <div class="m-titre-plat">
+                                        <span class="m-nom-plat m-photo-active">{{ vin.nom }}</span>
+                                    </div>
+                                    <span class="m-separateur"></span>
+                                    <div class="m-prix">
+                                        <div class="m-quantite">
+                                            {% if typeVin.code != 'pichet' %}
+                                                <span>75cl</span>
+                                            {% endif %}
+                                            <span>{{ vin.prix1 }}€</span>
+                                        </div>
+                                        {% if typeVin.code != 'pichet' %}
+                                            <div class="m-quantite">
+                                                {% if typeVin.code != 'pichet' %}
+                                                    <span>37,5cl</span>
+                                                {% endif %}
+                                                {% if vin.prix2 %}<span>{{ vin.prix2 }}€</span>{% else %}<span>-</span>{% endif %}
+                                            </div>
                                         {% endif %}
                                     </div>
-                                    {% set i = i+1 %}
-                                {% endfor %}
-                            </div>
-                        {% endfor %}
-                    </div>
-                {% endfor %}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
                 {% endfor %}
             </div>
         </div>
     </div>
+    {#<div class="col-md-5">
+                    <h2 class="text-center">Menus</h2>
+                    {% for categorie in categories %}
+                        <h3 class="text-center">{{ categorie.nom }}</h3>
 
+                    {% for menu in categorie.menus %}
+                        <div class="m-categorie">
+                            <div class="m-title-categorie">
+                                <h4 class="text-center">{{ menu.nom }} - <small class="prix-menu">{{ menu.prix }}€</small></h4>
+                            </div>
+                            {% for choix in menu.choix %}
+                                {% set i = 1 %}
+                                <div class="choix-menu">
+                                    {% for plat in choix.plats %}
+                                        <div class="plat-menu">
+                                            {{ plat.nom }}
+                                            {% if i < choix.plats|length %}
+                                                </br><span>OU</span>
+                                            {% endif %}
+                                        </div>
+                                        {% set i = i+1 %}
+                                    {% endfor %}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endfor %}
+                    {% endfor %}
+                </div>#}
     <a href="#" class="btt"><i class="fa fa-chevron-up"></i></a>
 
 
