@@ -2,12 +2,25 @@
     --principal-color: #9b1212;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: blue !important;;
+}
+
 .navbar-light .navbar-brand {
     color: #FFFFFF;
     font-family: Pacifico;
     font-size: 30px;
 }
 
+.navbar-light .navbar-brand:hover {
+    color: #FFFFFF;
+    font-family: Pacifico;
+    font-size: 30px;
+}
+
+.navbar-toggle.collapsed .icon-bar {
+    color: green;
+}
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: #FFFFFF;
@@ -548,4 +561,8 @@ img{
 
 a:hover{
     cursor: pointer;
+}
+
+.border-perso-color{
+    border-color: var(--principal-color) !important;
 }
