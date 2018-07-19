@@ -45,7 +45,7 @@
 
 .parallax {
     /* The image used */
-    background-image: url("../images/devanture.jpg");
+    background-image: url("../images/test.jpg");
 
     /* Set a specific height */
     height: 500px;
@@ -86,7 +86,7 @@
 }
 .parallax2 {
     /* The image used */
-    background-image: url("../images/salle.jpg");
+    background-image: url("../images/terasse.jpg");
 
     /* Set a specific height */
     height: 500px;
@@ -100,7 +100,7 @@
 
 .parallax3 {
     /* The image used */
-    background-image: url("../images/brasserie.jpg");
+    background-image: url("../images/arrière_salle.jpg");
 
     /* Set a specific height */
     height: 500px;
