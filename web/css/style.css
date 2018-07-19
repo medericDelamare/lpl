@@ -539,3 +539,13 @@ img{
 .couleur-principale{
     color: var(--principal-color);
 }
+
+.menu-selectionne{
+    color: var(--principal-color) !important;
+    text-decoration: underline !important;
+    font-weight: bold;
+}
+
+a:hover{
+    cursor: pointer;
+}
