@@ -1,7 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div class="parallax"></div>
+    <div class="jumbotron" style="background: url('{{ asset('images/test.jpg') }}') no-repeat center; background-size: cover; height: 500px;" data-paroller-factor="0.5" data-paroller-factor-xs="0.2">
+    </div>
     <section class="container title-container">
         <div class="title-page">
             <h2> Présentation </h2>
@@ -19,7 +20,7 @@
             </div>
         </div>
     </div>
-    <div class="parallax2"></div>
+    <div class="jumbotron" style="background: url('{{ asset('images/terasse.jpg') }}') no-repeat center; background-size: cover; height: 500px;" data-paroller-factor="0.5" data-paroller-factor-xs="0.2"></div>
     <section class="container title-container">
         <div class="title-page">
             <h2> Plan & horaires du restaurant </h2>
@@ -76,7 +77,7 @@
             </div>
         </div>
     </div>
-    <div class="parallax3"></div>
+    <div class="jumbotron" style="background: url('{{ asset('images/arrière_salle.jpg') }}') no-repeat center; background-size: cover;" data-paroller-factor="0.5" data-paroller-factor-xs="0.2"></div>
     <section class="container title-container">
         <div class="title-page">
             <h2> Quelques plats en images </h2>
@@ -115,6 +116,10 @@
 {% endblock %}
 
 {% block javascripts %}
+    <script src="{{ asset('js/jquery.paroller.min.js') }}"></script>
+    <script>
+        $('.jumbotron').paroller();
+    </script>
     <script>
         function initMap() {
             var uluru = {lat: 49.364025, lng: 0.462554};
@@ -131,5 +136,5 @@
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWdGusRdm9EIBqR9o6ONFbK5O31Ta91j4&callback=initMap">
     </script>
-    <script>$('.carousel').carousel()</script>
+    <script>$('.jumbotron').carousel()</script>
 {% endblock %}
