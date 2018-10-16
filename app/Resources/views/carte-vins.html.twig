@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div class="parallax-menu"></div>
+    <div class="jumbotron-parallax parallax-carte-vins" data-paroller-factor="0.5" data-paroller-factor-xs="0.2"></div>
     <section class="container title-container">
         <div class="title-page">
             <h2> Carte des vins </h2>
@@ -84,4 +84,11 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/jquery.paroller.min.js') }}"></script>
+    <script>
+        $('.jumbotron-parallax').paroller();
+    </script>
 {% endblock %}

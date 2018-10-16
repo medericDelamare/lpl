@@ -43,75 +43,6 @@
     width: 100%;
 }
 
-.parallax {
-    /* The image used */
-    background-image: url("../images/test.jpg");
-
-    /* Set a specific height */
-    height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax-buffet-froid {
-    /* The image used */
-    background-image: url("../images/buffet-froid.jpg");
-
-    /* Set a specific height */
-    height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax-menu {
-    /* The image used */
-    background-image: url("../images/vin.jpg");
-
-    /* Set a specific height */
-    height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.parallax2 {
-    /* The image used */
-    background-image: url("../images/terasse.jpg");
-
-    /* Set a specific height */
-    height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax3 {
-    /* The image used */
-    background-image: url("../images/arrière_salle.jpg");
-
-    /* Set a specific height */
-    height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 html {
     height: 100%;
 }
@@ -583,6 +514,18 @@ a:hover{
 
 .parallax-index-3{
     background: url("../images/arrière_salle.jpg") no-repeat center;
+}
+
+.parallax-carte-vins{
+    background: url("../images/vin.jpg") no-repeat center;
+}
+
+.parallax-menus{
+    background: url("../images/vin.jpg") no-repeat center;
+}
+
+.parallax-buffet-froid{
+    background: url("../images/buffet-froid.jpg") no-repeat center;
 }
 
 .custom-toggler.navbar-toggler {

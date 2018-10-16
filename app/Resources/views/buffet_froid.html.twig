@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block body %}
-    <div class="parallax-buffet-froid"></div>
+    <div class="jumbotron-parallax parallax-buffet-froid" data-paroller-factor="0.5" data-paroller-factor-xs="0.2"></div>
     <section class="container title-container">
         <div class="title-page">
             <h2> Buffet froid </h2>
@@ -152,7 +152,10 @@
             focusOnSelect: true
 
         });
+    </script>
 
-
+    <script src="{{ asset('js/jquery.paroller.min.js') }}"></script>
+    <script>
+        $('.jumbotron-parallax').paroller();
     </script>
 {% endblock %}
