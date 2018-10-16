@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div class="jumbotron" style="background: url('{{ asset('images/test.jpg') }}') no-repeat center; background-size: cover; height: 500px;" data-paroller-factor="0.5" data-paroller-factor-xs="0.2">
+    <div class="jumbotron-parallax parallax-index-1" data-paroller-factor="0.5" data-paroller-factor-xs="0.2">
     </div>
     <section class="container title-container">
         <div class="title-page">
@@ -20,7 +20,7 @@
             </div>
         </div>
     </div>
-    <div class="jumbotron" style="background: url('{{ asset('images/terasse.jpg') }}') no-repeat center; background-size: cover; height: 500px;" data-paroller-factor="0.5" data-paroller-factor-xs="0.2"></div>
+    <div class="jumbotron-parallax parallax-index-2" data-paroller-factor="0.5" data-paroller-factor-xs="0.2"></div>
     <section class="container title-container">
         <div class="title-page">
             <h2> Plan & horaires du restaurant </h2>
@@ -77,7 +77,7 @@
             </div>
         </div>
     </div>
-    <div class="jumbotron" style="background: url('{{ asset('images/arrière_salle.jpg') }}') no-repeat center; background-size: cover;" data-paroller-factor="0.5" data-paroller-factor-xs="0.2"></div>
+    <div class="jumbotron-parallax parallax-index-3" data-paroller-factor="0.5" data-paroller-factor-xs="0.2"></div>
     <section class="container title-container">
         <div class="title-page">
             <h2> Quelques plats en images </h2>
@@ -118,7 +118,7 @@
 {% block javascripts %}
     <script src="{{ asset('js/jquery.paroller.min.js') }}"></script>
     <script>
-        $('.jumbotron').paroller();
+        $('.jumbotron-parallax').paroller();
     </script>
     <script>
         function initMap() {

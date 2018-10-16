@@ -566,3 +566,21 @@ a:hover{
 .border-perso-color{
     border-color: var(--principal-color) !important;
 }
+
+.jumbotron-parallax{
+    background-size: cover !important;
+    height: 500px;
+}
+
+.parallax-index-1{
+    background: url("../images/devanture-coupee.jpg") no-repeat center;
+    margin-top: 50px;
+}
+
+.parallax-index-2{
+    background: url("../images/terasse.jpg") no-repeat center;
+}
+
+.parallax-index-3{
+    background: url("../images/arrière_salle.jpg") no-repeat center;
+}
