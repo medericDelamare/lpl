@@ -13,57 +13,49 @@
         </div>
     </section>
     <div></div>
-    <div class="container-full container">
-        <div class="slider-for">
-            <div class="item">
-                <img src="{{ asset('images/buffet-froid/slide1.jpg') }}" alt="image"  draggable="false"/>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="{{ asset('images/buffet-froid/slide1.jpg') }}" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="{{ asset('images/buffet-froid/slide2.jpg') }}" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="{{ asset('images/buffet-froid/slide3.jpg') }}" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="{{ asset('images/buffet-froid/slide6.jpg') }}" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="{{ asset('images/buffet-froid/slide7.jpg') }}" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
-            <div class="item">
-                <img src="{{ asset('images/buffet-froid/slide2.jpg') }}" alt="image" draggable="false"/>
-            </div>
-            <div class="item">
-                <img src="{{ asset('images/buffet-froid/slide3.jpg') }}" alt="image" draggable="false"/>
-            </div>
-            <div class="item">
-                <img src="{{ asset('images/buffet-froid/slide4.jpg') }}" alt="image" draggable="false"/>
-            </div>
-            <div class="item">
-                <img src="{{ asset('images/buffet-froid/slide5.jpg') }}" alt="image" draggable="false"/>
-            </div>
-            <div class="item">
-                <img src="{{ asset('images/buffet-froid/slide6.jpg') }}" alt="image" draggable="false"/>
-            </div>
-            <div class="item">
-                <img src="{{ asset('images/buffet-froid/slide7.jpg') }}" alt="image" draggable="false"/>
-            </div>
-        </div>
 
-        <div class="slider-nav">
-            <div class="item">
-                <img src="{{ asset('images/buffet-froid/slide1.jpg') }}" alt="image"  draggable="false"/>
-            </div>
-            <div class="item">
-                <img src="{{ asset('images/buffet-froid/slide2.jpg') }}" alt="image" draggable="false"/>
-            </div>
-            <div class="item">
-                <img src="{{ asset('images/buffet-froid/slide3.jpg') }}" alt="image" draggable="false"/>
-            </div>
-            <div class="item">
-                <img src="{{ asset('images/buffet-froid/slide4.jpg') }}" alt="image" draggable="false"/>
-            </div>
-            <div class="item">
-                <img src="{{ asset('images/buffet-froid/slide5.jpg') }}" alt="image" draggable="false"/>
-            </div>
-            <div class="item">
-                <img src="{{ asset('images/buffet-froid/slide6.jpg') }}" alt="image" draggable="false"/>
-            </div>
-            <div class="item">
-                <img src="{{ asset('images/buffet-froid/slide7.jpg') }}" alt="image" draggable="false"/>
-            </div>
         </div>
         <br>
         <div class="row">
-            <div class="col-md-6 offset-3">
+            <div class="col-md-6 offset-md-3">
                 <p class="border border-perso-color text-center">
                     Livraison gratuite à partir de 30 personnes <br>
                     50€ d'accompte à la reservation
@@ -72,7 +64,7 @@
         </div>
         <br>
         <div class="row">
-            <div class="col-md-5 offset-1 text-center">
+            <div class="col-md-5 offset-md-1 text-center">
                 <h1 class="text-center">Menu Buffet froid - 17€</h1>
                 <br>
 
@@ -157,5 +149,8 @@
     <script src="{{ asset('js/jquery.paroller.min.js') }}"></script>
     <script>
         $('.jumbotron-parallax').paroller();
+
     </script>
+
+    <script>$('.jumbotron').carousel()</script>
 {% endblock %}
