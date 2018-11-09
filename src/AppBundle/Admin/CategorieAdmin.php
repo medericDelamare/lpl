@@ -15,7 +15,8 @@ class CategorieAdmin extends AbstractAdmin
     {
         $form
             ->add('nom')
-            ->add('code');
+            ->add('code')
+            ->add('position');
     }
 
     protected function configureDatagridFilters(DatagridMapper $filter)
@@ -29,6 +30,7 @@ class CategorieAdmin extends AbstractAdmin
     {
         $list
             ->addIdentifier('nom')
-            ->add('code');
+            ->add('code')
+            ->add('position');
     }
 }
