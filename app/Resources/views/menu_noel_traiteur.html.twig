@@ -1,0 +1,155 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="jumbotron-parallax parallax-menu-noel" data-paroller-factor="0.5" data-paroller-factor-xs="0.2"></div>
+    <section class="container title-container">
+        <div class="title-page">
+            <h2> Menus de Noël </h2>
+        </div>
+    </section>
+    <div></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="m-categorie">
+                    <div class="m-title-categorie">
+                        <h4 class="text-center">Menu Enfant 10€00 </h4>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="plat-menu">
+                            Petits fours chauds
+                        </div>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="plat-menu">
+                            Poulet à la crème &amp; purée maison
+                        </div>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="plat-menu">
+                            Mini gâteau 3 pièces et surprise
+                        </div>
+                    </div>
+                </div>
+                <div class="m-categorie">
+                    <div class="m-title-categorie">
+                        <h4 class="text-center">Menu 18€00 </h4>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="plat-menu">
+                            Petits fours chauds (5 pièces)
+                        </div>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="plat-menu">
+                            Tartare de saumon sur lit de mâche
+                            </br><span>OU</span></br>
+                            Coquille Saint Jacques
+                        </div>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="plat-menu">
+                            Filet de sandre sauce homard Riz et flan de légumes
+                            </br><span>OU</span></br>
+                            Souris d'agneau confites Gratin dauphinois et tomate provençale
+                        </div>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="plat-menu">
+                            Charlotte aux poires
+                            </br><span>OU</span></br>
+                            Entremet 3 chocolats
+                        </div>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="plat-menu">
+                            Supplément 3€ Salade fromages (chaud ou froid) et petit pain
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="m-categorie">
+                    <div class="m-title-categorie">
+                        <h4 class="text-center">Menu 22€00 </h4>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="plat-menu">
+                            Petits fours chauds (5 pièces)
+                        </div>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="plat-menu">
+                            Médaillon de foie gras (accompagné de son pain d'épice et de sa compote)
+                            </br><span>OU</span></br>
+                            Feuilleté de ris de veau
+                        </div>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="plat-menu">
+                            Joues de porc confites au cidre et miel avec son gratin dauphinois et tomate provençale
+                            </br><span>OU</span></br>
+                            Médaillon de lotte sauce chorizo riz et flan de légumes
+                        </div>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="plat-menu">
+                            Galet au chocolat sur son craquant
+                            </br><span>OU</span></br>
+                            Fondant caramel beurre salé
+                        </div>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="plat-menu">
+                            (Pour 6 menus, 1 bouteilles de coteaux du layon offerte)
+                        </div>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="plat-menu">
+                            Supplément 3€ Salade fromages (chaud ou froid) et petit pain
+                        </div>
+                    </div>
+                </div>
+                <div class="m-categorie">
+                    <div class="m-title-categorie">
+                        <h4 class="text-center">Menu 15€00 </h4>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="plat-menu">
+                            Petits Fours chauds (5 pièces)
+                        </div>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="plat-menu">
+                            Norvégienne
+                            </br><span>OU</span></br>
+                            Cassolette d'escargots
+                        </div>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="plat-menu">
+                            Magret de canard sauce au poivre gratin dauphinois et tomate provençale
+                            </br><span>OU</span></br>
+                            Dos de cabillaud sauce whisky Riz et flan de légumes
+                        </div>
+                    </div>
+                    <div class="choix-menu">
+                        <div class="plat-menu">
+                            Fondant aux deux chocolats
+                            </br><span>OU</span></br>
+                            Tiramisu
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock%}
+
+{% block javascripts %}<script src="{{ asset('js/jquery.paroller.min.js') }}"></script>
+    <script>
+        $('.jumbotron-parallax').paroller();
+    </script>
+
+    <script>$('.jumbotron').carousel()</script>
+{% endblock %}

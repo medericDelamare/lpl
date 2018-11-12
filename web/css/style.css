@@ -528,6 +528,10 @@ a:hover{
     background: url("../images/buffet-froid.jpg") no-repeat center;
 }
 
+.parallax-menu-noel{
+    background: url("../images/menus-noel.jpg") no-repeat center;
+}
+
 .custom-toggler.navbar-toggler {
     border-color: rgb(255,255,255);
 }
