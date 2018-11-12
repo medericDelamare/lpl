@@ -546,3 +546,28 @@ a:hover{
         font-size: 15px;
     }
 }
+
+.separation{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--principal-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.premier-element{
+    padding-top: 15px;
+}
+
+.choix-menu-noel{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #FFF;
+    z-index: 10;
+}
+
+.choix-menu-noel .plat-menu span{
+    color: var(--principal-color);
+}
