@@ -28,7 +28,7 @@
                                                 {% for plat in choix.plats %}
                                                     {{ plat.nom }}
                                                     {% if i < choix.plats|length %}
-                                                        <span>/</span>
+                                                        {% if categorie.code == 'menu-midi' %} <span>/</span> {% else %} </br><span>OU</span></br>{% endif %}
                                                     {% endif %}
                                                     {% set i = i+1 %}
                                                 {% endfor %}
@@ -58,7 +58,9 @@
                                                 {% for plat in choix.plats %}
                                                     {{ plat.nom }}
                                                     {% if i < choix.plats|length %}
-                                                        <span>/</span>
+                                                        {% if i < choix.plats|length %}
+                                                            {% if categorie.code == 'menu-midi' %} <span>/</span> {% else %} </br><span>OU</span></br>{% endif %}
+                                                        {% endif %}
                                                     {% endif %}
                                                     {% set i = i+1 %}
                                                 {% endfor %}
