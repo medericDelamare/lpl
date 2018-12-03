@@ -40,7 +40,7 @@ class Menu
 
     /**
      * @var Choix[]
-     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Choix", mappedBy="menu")
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Choix", mappedBy="menu", cascade={"remove"})
      */
     private $choix;
 

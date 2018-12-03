@@ -34,7 +34,7 @@ class Choix
 
     /**
      * @var Plat[]
-     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Plat", mappedBy="choix")
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Plat", mappedBy="choix", cascade={"remove"})
      */
     private $plats;
 
