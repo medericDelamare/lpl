@@ -21,68 +21,101 @@
 
                 <h3 class="text-center">{{ categorie.nom }}</h3>
                 <div class="row">
-                    <div class="col-md-6">
-                        {% for key,menu in categorie.menus %}
-                            {% if(key%2 == 0) %}
-                                <div class="m-categorie">
-                                    <div class="m-title-categorie">
-                                        <h4 class="text-center">{{ menu.nom }} {% if categorie.code == 'menu-midi' %} - <small class="prix-menu">{{ menu.prix }}€{% endif %}</small></h4>
-                                    </div>
-                                    {% for choix in menu.choix %}
-                                        {% set i = 1 %}
-                                        <div class="choix-menu {% if loop.first == true %} premier-element {% endif %} ">
-                                            <div class="plat-menu">
-                                                {% for plat in choix.plats %}
-                                                    {{ plat.nom }}
-                                                    {% if i < choix.plats|length %}
-                                                        {% if categorie.code == 'menu-midi' %} <span>/</span> {% else %} </br><span>OU</span></br>{% endif %}
-                                                    {% endif %}
-                                                    {% set i = i+1 %}
-                                                {% endfor %}
-                                            </div>
+                    {% if categorie.menus|length = 1 %}
+                        <div class="col-md-6 col-md-offset-3">
+                            {% for key,menu in categorie.menus %}
+                                {% if(key%2 == 0) %}
+                                    <div class="m-categorie">
+                                        <div class="m-title-categorie">
+                                            <h4 class="text-center">{{ menu.nom }} {% if categorie.code != 'menu-reservation' %} - <small class="prix-menu">{{ menu.prix }}€{% endif %}</small></h4>
                                         </div>
-                                        {% if loop.last == false %}
-                                            <div class="separation">
-                                                &ndash;
-                                            </div>
-                                        {% endif %}
-                                    {% endfor %}
-                                </div>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
-                    <div class="col-md-6">
-                        {% for key,menu in categorie.menus %}
-                            {% if(key%2 != 0) %}
-                                <div class="m-categorie">
-                                    <div class="m-title-categorie">
-                                        <h4 class="text-center">{{ menu.nom }} {% if categorie.code == 'menu-midi' %} - <small class="prix-menu">{{ menu.prix }}€{% endif %}</small></h4>
-                                    </div>
-                                    {% for choix in menu.choix %}
-                                        {% set i = 1 %}
-                                        <div class="choix-menu {% if loop.first == true %} premier-element {% endif %} ">
-                                            <div class="plat-menu">
-                                                {% for plat in choix.plats %}
-                                                    {{ plat.nom }}
-                                                    {% if i < choix.plats|length %}
+                                        {% for choix in menu.choix %}
+                                            {% set i = 1 %}
+                                            <div class="choix-menu {% if loop.first == true %} premier-element {% endif %} ">
+                                                <div class="plat-menu">
+                                                    {% for plat in choix.plats %}
+                                                        {{ plat.nom }}
                                                         {% if i < choix.plats|length %}
                                                             {% if categorie.code == 'menu-midi' %} <span>/</span> {% else %} </br><span>OU</span></br>{% endif %}
                                                         {% endif %}
-                                                    {% endif %}
-                                                    {% set i = i+1 %}
-                                                {% endfor %}
+                                                        {% set i = i+1 %}
+                                                    {% endfor %}
+                                                </div>
                                             </div>
+                                            {% if loop.last == false %}
+                                                <div class="separation">
+                                                    &ndash;
+                                                </div>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <div class="col-md-6">
+                            {% for key,menu in categorie.menus %}
+                                {% if(key%2 == 0) %}
+                                    <div class="m-categorie">
+                                        <div class="m-title-categorie">
+                                            <h4 class="text-center">{{ menu.nom }} {% if categorie.code != 'menu-reservation' %} - <small class="prix-menu">{{ menu.prix }}€{% endif %}</small></h4>
                                         </div>
-                                        {% if loop.last == false %}
-                                        <div class="separation">
-                                            &ndash;
+                                        {% for choix in menu.choix %}
+                                            {% set i = 1 %}
+                                            <div class="choix-menu {% if loop.first == true %} premier-element {% endif %} ">
+                                                <div class="plat-menu">
+                                                    {% for plat in choix.plats %}
+                                                        {{ plat.nom }}
+                                                        {% if i < choix.plats|length %}
+                                                            {% if categorie.code == 'menu-midi' %} <span>/</span> {% else %} </br><span>OU</span></br>{% endif %}
+                                                        {% endif %}
+                                                        {% set i = i+1 %}
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                            {% if loop.last == false %}
+                                                <div class="separation">
+                                                    &ndash;
+                                                </div>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        <div class="col-md-6">
+                            {% for key,menu in categorie.menus %}
+                                {% if(key%2 != 0) %}
+                                    <div class="m-categorie">
+                                        <div class="m-title-categorie">
+                                            <h4 class="text-center">{{ menu.nom }} {% if categorie.code == 'menu-reservation' %} - <small class="prix-menu">{{ menu.prix }}€{% endif %}</small></h4>
                                         </div>
-                                        {% endif %}
-                                    {% endfor %}
-                                </div>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
+                                        {% for choix in menu.choix %}
+                                            {% set i = 1 %}
+                                            <div class="choix-menu {% if loop.first == true %} premier-element {% endif %} ">
+                                                <div class="plat-menu">
+                                                    {% for plat in choix.plats %}
+                                                        {{ plat.nom }}
+                                                        {% if i < choix.plats|length %}
+                                                            {% if i < choix.plats|length %}
+                                                                {% if categorie.code == 'menu-midi' %} <span>/</span> {% else %} </br><span>OU</span></br>{% endif %}
+                                                            {% endif %}
+                                                        {% endif %}
+                                                        {% set i = i+1 %}
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                            {% if loop.last == false %}
+                                            <div class="separation">
+                                                &ndash;
+                                            </div>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
                 </div>
             </div>
         {% endfor %}
