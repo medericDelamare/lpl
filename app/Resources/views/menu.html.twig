@@ -21,7 +21,7 @@
 
                 <h3 class="text-center">{{ categorie.nom }}</h3>
                 <div class="row">
-                    {% if categorie.menus|length = 1 %}
+                    {% if categorie.menus|length == 1 %}
                         <div class="col-md-6 col-md-offset-3">
                             {% for key,menu in categorie.menus %}
                                 {% if(key%2 == 0) %}
