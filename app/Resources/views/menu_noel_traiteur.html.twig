@@ -9,6 +9,72 @@
     </section>
     <div></div>
     <div class="container">
+        <h1 class="titre-noel text-center">Composez votre menu</h1>
+
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Petits fours chaud (5personnes)', 'prix': '2,50'} %}
+
+        <h2 class="sous-titre-noel text-center">Entrées froides</h2>
+
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Norvégienne', 'prix': '3,50'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Bavarois saumon asperge', 'prix': '3,80'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Médaillon de foie gras', 'prix': '6,50'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Assiette de la mer', 'prix': '3,50'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Galantine de gibier', 'prix': '3,00'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Tartare de saumon', 'prix': '3,80'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Coquille de saumon ou thon', 'prix': '3,00'} %}
+
+        <h2 class="sous-titre-noel text-center">Entrées chaudes</h2>
+
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Coquille Saint-Jacques', 'prix': '3,50'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Cassolette d\'escargots', 'prix': '3,00'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Bourse aux fruits de mer', 'prix': '2,90'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Feuilleté de ris de veau', 'prix': '3,80'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Bouché à la reine', 'prix': '2,80'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Aumonière pomme foie gras', 'prix': '4,50'} %}
+
+        <h2 class="sous-titre-noel text-center">Plats (viandes)</h2>
+
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Pavé de biche sauce au poivre', 'prix': '8,00'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Joues de porc confites au cidre et miel', 'prix': '7,50'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Magret de canard sauce au poivre', 'prix': '6,50'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Poulet farce fine aux girolles', 'prix': '7,00'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Osso buco de veau sauce gremolata', 'prix': '7,50'} %}
+
+        <div class="infos-menu-noel text-center">
+            <p>Les plats de viandes sont accompagnés de gratins dauphinois et tomate provençale</p>
+        </div>
+
+        <h2 class="sous-titre-noel text-center">Plats (poissons)</h2>
+
+
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Médaillon de lotte sauce chorizo', 'prix': '8,50'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Dos de cabillaud sauce whisky', 'prix': '7,50'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Filet de sandre sauce cocktail', 'prix': '8,00'} %}
+
+        <div class="infos-menu-noel text-center">
+            <p>Les plats de poissons sont accompagnés de riz blanc et ratatouille</p>
+        </div>
+
+
+        <h2 class="sous-titre-noel text-center">Desserts</h2>
+
+
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Fondant aux deux chocolats', 'prix': '2,80'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Charlotte aux poires', 'prix': '3,00'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Aumonière normande', 'prix': '2,80'} %}
+        {% include 'menu-noel-ligne.html.twig' with {'nom': 'Entremet trois chocolats', 'prix': '3,00'} %}
+
+
+        <div class="infos-menu-noel text-center mt-5">
+            <p>Passez commande avant le 21 décembre pour Noël</p>
+            <p>Et le 28 décembre pour le jour de l'an</p>
+        </div>
+
+
+        <h2 class="sous-titre-noel text-center">Passez de bonnes fêtes</h2>
+
+    </div>
+    {#<div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="m-categorie">
@@ -182,7 +248,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>#}
 {% endblock%}
 
 {% block javascripts %}<script src="{{ asset('js/jquery.paroller.min.js') }}"></script>
