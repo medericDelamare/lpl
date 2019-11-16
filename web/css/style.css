@@ -1,6 +1,15 @@
 :root{
     --principal-color: #9b1212;
 }
+@font-face {
+    font-family: "Christmas";
+    src: url('fonts/MerryChristmasStar.ttf');
+}
+
+@font-face {
+    font-family: "Christmas-2";
+    src: url('fonts/MerryChristmasStar.ttf');
+}
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: blue !important;;
@@ -351,7 +360,7 @@ a.btt:hover{
 .navbar-nav .dropdown-menu {
     position: static;
     float: none;
-    width: 600px;
+    width: 200px;
 }
 
 .content-section{
@@ -569,4 +578,20 @@ a:hover{
 
 .choix-menu-noel .plat-menu span{
     color: var(--principal-color);
+}
+
+.titre-noel{
+    font-family: Christmas;
+    font-size: 85px;
+}
+
+.sous-titre-noel{
+    font-family: Christmas;
+    font-size: 65px;
+}
+
+.infos-menu-noel{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
 }
