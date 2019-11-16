@@ -58,7 +58,7 @@
                                 {% if(key%2 == 0) %}
                                     <div class="m-categorie">
                                         <div class="m-title-categorie">
-                                            <h4 class="text-center">{{ menu.nom }} {% if categorie.code != 'menu-reservation' %} - <small class="prix-menu">{{ menu.prix }}€{% endif %}</small></h4>
+                                            <h4 class="text-center">{{ menu.nom }} {% if categorie.code == 'menu-midi' %} - <small class="prix-menu">{{ menu.prix }}€{% endif %}</small></h4>
                                         </div>
                                         {% for choix in menu.choix %}
                                             {% set i = 1 %}
@@ -88,7 +88,7 @@
                                 {% if(key%2 != 0) %}
                                     <div class="m-categorie">
                                         <div class="m-title-categorie">
-                                            <h4 class="text-center">{{ menu.nom }} {% if categorie.code != 'menu-reservation' %} - <small class="prix-menu">{{ menu.prix }}€{% endif %}</small></h4>
+                                            <h4 class="text-center">{{ menu.nom }} {% if categorie.code == 'menu-midi' %} - <small class="prix-menu">{{ menu.prix }}€{% endif %}</small></h4>
                                         </div>
                                         {% for choix in menu.choix %}
                                             {% set i = 1 %}
