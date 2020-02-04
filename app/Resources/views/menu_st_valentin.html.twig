@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="jumbotron-parallax parallax-menu-st-valentin" data-paroller-factor="0.5" data-paroller-factor-xs="0.2"></div>
+    <section class="container title-container">
+        <div class="title-page">
+            <h2> Menu de la Saint-Valentin 2020</h2>
+        </div>
+    </section>
+    <div></div>
+    <div class="container container-st-valentin text-center">
+        <h1 class="titre-st-valentin text-center">Vendredi 14 Février au soir et Jeudi 15 Février au midi</h1>
+        <h2 class="titre-st-valentin text-center">Menu à 26€</h2>
+
+        <hr class="test"/>
+
+        <p class="plat-st-valentin mt-5">Cocktail maison et ses amusues bouches</p>
+        
+        <img src="{{ asset('images/inter-paragraphe.png') }}" class="inter-paragraphe">
+
+        <p class="plat-st-valentin">Cassolette d'escargots</p>
+        <p class="or-st-valentin">OU</p>
+        <p class="plat-st-valentin">Tartare de saumon</p>
+        <p class="or-st-valentin">OU</p>
+        <p class="plat-st-valentin">Coquille Saint-Jacques</p>
+
+        <img src="{{ asset('images/inter-paragraphe.png') }}" class="inter-paragraphe">
+
+        <p class="plat-st-valentin">Magret de canard sauce au poivre</p>
+        <p class="or-st-valentin">OU</p>
+        <p class="plat-st-valentin">Osso bucco de veau sauce gremolata</p>
+        <p class="or-st-valentin">OU</p>
+        <p class="plat-st-valentin">Dos de cabillaud sauce Whisky</p>
+
+        <img src="{{ asset('images/inter-paragraphe.png') }}" class="inter-paragraphe">
+
+        <p class="plat-st-valentin">Fromages normands - salade</p>
+
+        <img src="{{ asset('images/inter-paragraphe.png') }}" class="inter-paragraphe">
+
+        <p class="plat-st-valentin">Aumonière normande</p>
+        <p class="or-st-valentin">OU</p>
+        <p class="plat-st-valentin">Entremet trois chocolats</p>
+        <p class="or-st-valentin">OU</p>
+        <p class="plat-st-valentin">Pêche melba</p>
+
+        <img src="{{ asset('images/inter-paragraphe.png') }}" class="inter-paragraphe">
+
+        <p class="plat-st-valentin">Café</p>
+    </div>
+{% endblock%}
+
+{% block javascripts %}<script src="{{ asset('js/jquery.paroller.min.js') }}"></script>
+    <script>
+        $('.jumbotron-parallax').paroller();
+    </script>
+
+    <script>$('.jumbotron').carousel()</script>
+{% endblock %}
