@@ -1,6 +1,7 @@
-:root{
+:root {
     --principal-color: #9b1212;
 }
+
 @font-face {
     font-family: "Christmas";
     src: url('fonts/MerryChristmasStar.ttf');
@@ -9,6 +10,21 @@
 @font-face {
     font-family: "Christmas-2";
     src: url('fonts/MerryChristmasStar.ttf');
+}
+
+@font-face {
+    font-family: "St-valentin";
+    src: url('fonts/LovelyValentine.ttf');
+}
+
+@font-face {
+    font-family: "St-valentin-2";
+    src: url('fonts/st-valentin.otf');
+}
+
+@font-face {
+    font-family: "St-valentin-3";
+    src: url('fonts/ChasingHearts.ttf');
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -31,7 +47,7 @@
     color: green;
 }
 
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
     color: #FFFFFF;
 }
 
@@ -43,7 +59,7 @@
     color: #FFFFFF;
 }
 
-.container{
+.container {
     margin-top: 50px;
 }
 
@@ -59,12 +75,13 @@ html {
 body {
     min-height: 100%;
 }
-.contact-size{
+
+.contact-size {
     font-size: 25px;
 }
 
 
-.footer-distributed{
+.footer-distributed {
     background-color: #292c2f;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
@@ -78,46 +95,46 @@ body {
 
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
-.footer-distributed .footer-right{
+.footer-distributed .footer-right {
     display: inline-block;
     vertical-align: top;
 }
 
 /* Footer left */
 
-.footer-distributed .footer-left{
+.footer-distributed .footer-left {
     width: 40%;
 }
 
 /* The company logo */
 
-.footer-distributed h3{
-    color:  #ffffff;
+.footer-distributed h3 {
+    color: #ffffff;
     font: normal 36px 'Pacifico', cursive;
     margin: 0;
 }
 
-.footer-distributed h3 span{
-    color:  #5383d3;
+.footer-distributed h3 span {
+    color: #5383d3;
 }
 
 /* Footer links */
 
-.footer-distributed .footer-links{
-    color:  #ffffff;
+.footer-distributed .footer-links {
+    color: #ffffff;
     margin: 20px 0 12px;
     padding: 0;
 }
 
-.footer-distributed .footer-links a{
-    display:inline-block;
+.footer-distributed .footer-links a {
+    display: inline-block;
     line-height: 1.8;
     text-decoration: none;
-    color:  inherit;
+    color: inherit;
 }
 
-.footer-distributed .footer-company-name{
-    color:  #8f9296;
+.footer-distributed .footer-company-name {
+    color: #8f9296;
     font-size: 14px;
     font-weight: normal;
     margin: 0;
@@ -125,12 +142,12 @@ body {
 
 /* Footer Center */
 
-.footer-distributed .footer-center{
+.footer-distributed .footer-center {
     width: 35%;
 }
 
-.footer-distributed .footer-center i{
-    background-color:  #33383b;
+.footer-distributed .footer-center i {
+    background-color: #33383b;
     color: #ffffff;
     font-size: 25px;
     width: 38px;
@@ -142,63 +159,63 @@ body {
     vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope{
+.footer-distributed .footer-center i.fa-envelope {
     font-size: 17px;
     line-height: 38px;
 }
 
-.footer-distributed .footer-center p{
+.footer-distributed .footer-center p {
     display: inline-block;
     color: #ffffff;
     vertical-align: middle;
-    margin:0;
+    margin: 0;
 }
 
-.footer-distributed .footer-center p span{
-    display:block;
+.footer-distributed .footer-center p span {
+    display: block;
     font-weight: normal;
-    font-size:14px;
-    line-height:2;
+    font-size: 14px;
+    line-height: 2;
 }
 
-.footer-distributed .footer-center p a{
-    color:  #5383d3;
+.footer-distributed .footer-center p a {
+    color: #5383d3;
     text-decoration: none;;
 }
 
 
 /* Footer Right */
 
-.footer-distributed .footer-right{
+.footer-distributed .footer-right {
     width: 20%;
 }
 
-.footer-distributed .footer-company-about{
+.footer-distributed .footer-company-about {
     line-height: 20px;
-    color:  #92999f;
+    color: #92999f;
     font-size: 13px;
     font-weight: normal;
     margin: 0;
 }
 
-.footer-distributed .footer-company-about span{
+.footer-distributed .footer-company-about span {
     display: block;
-    color:  #ffffff;
+    color: #ffffff;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-.footer-distributed .footer-icons{
+.footer-distributed .footer-icons {
     margin-top: 25px;
 }
 
-.footer-distributed .footer-icons a{
+.footer-distributed .footer-icons a {
     display: inline-block;
     width: 35px;
     height: 35px;
     cursor: pointer;
-    background-color:  #33383b;
+    background-color: #33383b;
     border-radius: 2px;
 
     font-size: 20px;
@@ -214,20 +231,20 @@ body {
 
 @media (max-width: 880px) {
 
-    .footer-distributed{
+    .footer-distributed {
         font: bold 14px sans-serif;
     }
 
     .footer-distributed .footer-left,
     .footer-distributed .footer-center,
-    .footer-distributed .footer-right{
+    .footer-distributed .footer-right {
         display: block;
         width: 100%;
         margin-bottom: 40px;
         text-align: center;
     }
 
-    .footer-distributed .footer-center i{
+    .footer-distributed .footer-center i {
         margin-left: 0;
     }
 
@@ -289,6 +306,7 @@ ul {
     align-items: center;
     margin: 0 5px;
 }
+
 .m-plat-info .m-prix .m-quantite span:last-child {
     font-size: 16px;
     font-weight: 700;
@@ -324,6 +342,7 @@ ul {
     padding: 15px 5px 25px 5px;
     border: 2px solid #F4F4F4;
 }
+
 a.btt {
     display: none;
     position: fixed;
@@ -353,7 +372,7 @@ a.btt .fa-chevron-up:before {
     text-align: center;
 }
 
-a.btt:hover{
+a.btt:hover {
     transform: translatey(-10%);
 }
 
@@ -363,7 +382,7 @@ a.btt:hover{
     width: 200px;
 }
 
-.content-section{
+.content-section {
     margin-top: 100px;
 }
 
@@ -373,29 +392,43 @@ a.btt:hover{
         margin-left: 25%;
     }
 }
+
 .onl_login .onl_authTitle {
     text-align: center;
     line-height: 300%;
 }
 
 .onl_login .onl_socialButtons a {
-    color: white; // In yourUse @body-bg
-opacity:0.9;
+    color: white;
+/ / In yourUse @body-bg opacity: 0.9;
 }
+
 .onl_login .onl_socialButtons a:hover {
     color: white;
-    opacity:1;
+    opacity: 1;
 }
-.onl_login .onl_socialButtons .onl_btn-facebook {background: #3b5998;border-color:#172d5e}
-.onl_login .onl_socialButtons .onl_btn-twitter {background: #00aced;border-color:#043d52}
-.onl_login .onl_socialButtons .onl_btn-google-plus {background: #c32f10;border-color:#6b1301}
+
+.onl_login .onl_socialButtons .onl_btn-facebook {
+    background: #3b5998;
+    border-color: #172d5e
+}
+
+.onl_login .onl_socialButtons .onl_btn-twitter {
+    background: #00aced;
+    border-color: #043d52
+}
+
+.onl_login .onl_socialButtons .onl_btn-google-plus {
+    background: #c32f10;
+    border-color: #6b1301
+}
 
 
-.prix-menu{
+.prix-menu {
     color: var(--principal-color);
 }
 
-.choix-menu{
+.choix-menu {
     text-align: center;
     font-size: 14px;
     font-weight: 700;
@@ -403,11 +436,11 @@ opacity:0.9;
     z-index: 10;
 }
 
-.choix-menu .plat-menu span{
+.choix-menu .plat-menu span {
     color: var(--principal-color);
 }
 
-.map-contact{
+.map-contact {
     height: 500px;
     width: 100%;
 
@@ -423,34 +456,40 @@ opacity:0.9;
     font-size: 10px;
 }
 
-.slider-for{
+.slider-for {
     width: 500px;
     height: 250px;
     margin: 30px auto 1px;
     overflow: hidden;
 }
-img{
+
+img {
     width: 100%;
     min-height: 100%;
 }
-.slider-nav{
+
+.slider-nav {
     width: 500px;
     height: 85px;
     margin: auto;
 }
-.slider-nav .slick-track{
+
+.slider-nav .slick-track {
     height: 85px;
 }
-.slick-arrow{
+
+.slick-arrow {
     position: absolute;
     top: 50%;
     z-index: 50;
     margin-top: -12px;
 }
-.slick-prev{
+
+.slick-prev {
     left: 0;
 }
-.slick-next{
+
+.slick-next {
     right: 0;
 }
 
@@ -488,61 +527,66 @@ img{
     position: relative;
 }
 
-.couleur-principale{
+.couleur-principale {
     color: var(--principal-color);
 }
 
-.menu-selectionne{
+.menu-selectionne {
     color: var(--principal-color) !important;
     text-decoration: underline !important;
     font-weight: bold;
 }
 
-a:hover{
+a:hover {
     cursor: pointer;
 }
 
-.border-perso-color{
+.border-perso-color {
     border-color: var(--principal-color) !important;
 }
 
-.jumbotron-parallax{
+.jumbotron-parallax {
     background-size: cover !important;
     height: 500px;
 }
 
-.parallax-index-1{
+.parallax-index-1 {
     background: url("../images/devanture-coupee.jpg") no-repeat center;
     margin-top: 50px;
 }
 
-.parallax-index-2{
+.parallax-index-2 {
     background: url("../images/terasse.jpg") no-repeat center;
 }
 
-.parallax-index-3{
+.parallax-index-3 {
     background: url("../images/arrière_salle.jpg") no-repeat center;
 }
 
-.parallax-carte-vins{
+.parallax-carte-vins {
     background: url("../images/vin.jpg") no-repeat center;
 }
 
-.parallax-menus{
+.parallax-menus {
     background: url("../images/carte-menus.jpg") no-repeat center;
 }
 
-.parallax-buffet-froid{
+.parallax-buffet-froid {
     background: url("../images/buffet-froid.jpg") no-repeat center;
 }
 
-.parallax-menu-noel{
+.parallax-menu-noel {
     background: url("../images/menus-noel.jpg") no-repeat center;
 }
 
-.custom-toggler.navbar-toggler {
-    border-color: rgb(255,255,255);
+.parallax-menu-st-valentin {
+    background: url("../images/men-st-valentin.jpg") no-repeat center;
 }
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255, 255, 255);
+}
+
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -555,7 +599,7 @@ a:hover{
     }
 }
 
-.separation{
+.separation {
     text-align: center;
     font-size: 14px;
     font-weight: 700;
@@ -564,11 +608,11 @@ a:hover{
     padding-bottom: 10px;
 }
 
-.premier-element{
+.premier-element {
     padding-top: 15px;
 }
 
-.choix-menu-noel{
+.choix-menu-noel {
     text-align: center;
     font-size: 14px;
     font-weight: 700;
@@ -576,23 +620,67 @@ a:hover{
     z-index: 10;
 }
 
-.choix-menu-noel .plat-menu span{
+.choix-menu-noel .plat-menu span {
     color: var(--principal-color);
 }
 
-.titre-noel{
+.titre-noel {
     font-family: Christmas;
     font-size: 85px;
 }
 
-.sous-titre-noel{
+.sous-titre-noel {
     font-family: Christmas;
     margin-top: 40px;
     font-size: 65px;
 }
 
-.infos-menu-noel{
+.infos-menu-noel {
     font-size: 20px;
     font-weight: 700;
     margin-top: 10px;
+}
+
+.dropdown-st-valentin {
+    width: 230px !important;
+}
+
+.titre-st-valentin {
+    font-family: St-valentin-3;
+    font-size: 35px;
+}
+
+.inter-paragraphe {
+    width: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.plat-st-valentin {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #FFF;
+    z-index: 10;
+}
+
+.or-st-valentin {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #FFF;
+    z-index: 10;
+    color: var(--principal-color);
+}
+
+.container-st-valentin {
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+@media (min-width: 575px) {
+    .container-st-valentin {
+        border: var(--principal-color) 1px solid;
+    }
 }
