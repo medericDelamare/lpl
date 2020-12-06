@@ -4,12 +4,26 @@
     <div class="jumbotron-parallax parallax-menu-noel" data-paroller-factor="0.5" data-paroller-factor-xs="0.2"></div>
     <section class="container title-container">
         <div class="title-page">
-            <h2> Menu de Noël 2019</h2>
+            <h2> Menu de Noël 2020</h2>
         </div>
     </section>
     <div></div>
     <div class="container">
-        <h1 class="titre-noel text-center">Composez votre menu</h1>
+        <div class="row">
+            <div class="col-12 col-md-6 mt-2">
+                <img src="{{ asset('images/menu-noel/menu-noel-1.jpg') }}">
+            </div>
+            <div class="col-12 col-md-6 mt-2">
+                <img src="{{ asset('images/menu-noel/menu-noel-2.jpg') }}">
+            </div>
+            <div class="col-12 col-md-6 mt-2">
+                <img src="{{ asset('images/menu-noel/menu-noel-3.jpg') }}">
+            </div>
+            <div class="col-12 col-md-6 mt-2">
+                <img src="{{ asset('images/menu-noel/menu-noel-4.jpg') }}">
+            </div>
+        </div>
+        {#<h1 class="titre-noel text-center">Composez votre menu</h1>
 
         {% include 'menu-noel-ligne.html.twig' with {'nom': 'Petits fours chauds (5 personnes)', 'prix': '2,50'} %}
 
@@ -71,7 +85,7 @@
         </div>
 
 
-        <h2 class="sous-titre-noel text-center">Passez de bonnes fêtes</h2>
+        <h2 class="sous-titre-noel text-center">Passez de bonnes fêtes</h2>#}
 
     </div>
 {% endblock%}
